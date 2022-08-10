@@ -1,0 +1,258 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {  
+    background-image: url("/img/background.jpg");
+}
+.cabecera{
+    /* background-color: #98ccfd; */
+    color: #211f26;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.logoTitulo {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav {
+    background-color: #67afcc;
+    padding-top: 08px;
+    padding-bottom: 08px;
+    margin: 05px;
+    border-radius: 10px;
+    border-bottom: 03px solid #3a7daa;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.nav ul li {
+        padding: 08px 100px 08px 100px;
+        background-color: #da905f;
+        margin: 01px;
+        border-bottom: 04px solid #e67f66;
+}
+.nav ul li a {
+    color: #211f26;
+    text-decoration: none;
+    text-align: center;
+
+}
+.nav ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+#tituloDestacados
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.destacados {
+    background-image: url(/img/backgrounddestacados.jpg);
+    width: 80vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; 
+}
+/* 
+.bodyProductos {
+    display: flex;
+    flex-direction: column;
+} */
+.bodyProductos main {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.listaProductos{
+    display: flex;
+    flex-flow: row wrap;
+    width: 60vw;
+    margin-left: 05px;
+}
+
+.seccionTitulo{
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    padding: 06px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.destacados article,
+.listaProductos article {
+    margin: 10px 05px 10px 05px; 
+}
+.categorias {
+    width: 20vw;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+    margin-left: 05px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+} 
+.categorias h4,
+.categorias ul {
+    margin-left: 20px;
+}
+.categorias h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.categorias ul {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.categorias ul li {
+    margin: 03px 00px 03px 00px;
+}
+
+.packs {
+    background-image: url(../img/backgrounddestacados.jpg);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 60vw;
+}
+.packs article {
+    margin: 30px;
+}
+
+.mainContacto {
+    display: flex;
+    flex-flow: row wrap;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.formContacto {
+    background-color: #3a7daa;
+    border: 02px solid #0c3d5f;
+    border-radius: 04px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 250px;
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    left: 00px;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+.formContacto h3 {
+    margin: 15px;
+}
+
+#nombre,
+#numero,
+#email{
+    width: 200px;
+}
+#mensaje {
+    width: 250px;
+    height: 75px;
+}
+.boton {
+    width: 75px;
+    height: 30px;
+    border-radius: 04px;
+    border: 01px solid #000 ;
+    border-bottom: 02px solid #000;
+} 
+.contactanos {
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 10px;
+    margin-top: 90px;
+    position: relative;
+    left: 230px;
+    height: 55vh;
+}
+
+.textoContacto {
+    width: 550px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 100px;
+    bottom: 100px;
+    border-right: 01px solid black ;
+
+}
+.textoContacto h2 {
+    margin: 15px;
+}
+.textoContacto p {
+    line-height: 2;
+}
+
+.textoAbout {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 17px;
+    background-color: #da905f;
+    display: flex;
+    flex-flow: column wrap;
+    width: 80vw;
+    margin-top: 60px;
+    margin-bottom: 86px;
+    padding: 15px;
+    border-radius: 05px;
+    border-bottom: 03px solid #a0521d;
+}
+
+#textoaboutIngles {
+    font-style: italic;
+    font-weight: 900;
+}
+
+footer {
+    background-color: #40bb54d8;
+    height: 10vh;
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+
+}
+footer p {
+    margin: 05px 0px 0px 05px;
+}
