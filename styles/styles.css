@@ -146,7 +146,7 @@ main {
     align-items: center;
 }
 
-/*     Nav bar de seccion productos    */
+/*     Nav bar seccion PRODUCTOS    */
 .categorias {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 17px;
@@ -190,7 +190,8 @@ main {
 .navCategorias ul {
     list-style-type: none;
 }
-/*    Fin nav bar de Productos       */
+/*    fin nav bar PRODUCTOS       */
+
 
 .bodyProductos main {
     display: flex;
@@ -234,9 +235,11 @@ main {
 .bodyProductos footer {
     width: 100%;
 }
-
 /*           Fin de seccion productos          */
 
+
+
+/*      seccion PACKS         */
 .packs {
     background-image: url(../img/backgrounddestacados.jpg);
     display: flex;
@@ -249,7 +252,7 @@ main {
 .packs article {
     margin: 30px;
 }
-
+/*       fin seccion PACKS         */
 
 
 
