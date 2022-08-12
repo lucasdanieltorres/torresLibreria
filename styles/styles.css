@@ -253,12 +253,10 @@ main {
 
 
 
-/*          Seccion de contacto           */
+/*      seccion de contacto     */
 .mainContacto {
     display: flex;
     flex-flow: row wrap;
-    /* align-items: center;
-    justify-content: center; */
 }
 
 .formContacto {
@@ -324,7 +322,9 @@ main {
 .textoContacto p {
     line-height: 2;
 }
+/*      fin seccion CONTACTO      */
 
+/*      seccion ABOUT         */
 .textoAbout {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 17px;
@@ -343,7 +343,9 @@ main {
     font-style: italic;
     font-weight: 900;
 }
+/*      fin seccion ABOUT         */
 
+/*      FOOTER        */
 footer {
     background-color: #40bb54d8;
     height: 10vh;
@@ -356,9 +358,10 @@ footer {
 footer p {
     margin: 05px 0px 0px 05px;
 }
+/* fin       FOOTER        */
 
 
-/*      grids INDEX mobile       */
+/*  INDEX mobile    */
 .bodyGrid {
     display: grid;
     grid-template-areas: 
@@ -369,11 +372,11 @@ footer p {
     grid-template-columns: 1fr 1fr 1fr;
 
 }
-/*             Fin grid INDEX mobile          */
+/*  fin INDEX mobile    */
 
 
 
-
+/*  Media querie para tablets    */
 @media screen and (max-width: 768px) {
     .navCategorias 
     {
@@ -391,7 +394,9 @@ footer p {
         width: 100%;
         font-size: 14px;
     }
-    /*          seccion PRODUCTOS tableta         */
+
+
+    /*  seccion PRODUCTOS tablet  */
     .bodyProductos {
         display: grid;
         grid-template-areas: 
@@ -463,14 +468,15 @@ footer p {
         width: 45vw;
         
     }
-
-
-/*          fin PRODUCTOS tableta            */
+    /*  fin PRODUCTOS tablet   */
 }
+/*  fin media querie tablet   */
 
+
+/*  Media querie desktop  */
 @media screen and (min-width: 1200px){
 
-    /*            grids INDEX desktop            */
+    /*  INDEX desktop    */
     .nav {
         background-color: #67afcc;
         padding-top: 08px;
@@ -495,9 +501,9 @@ footer p {
     .destacados article {
         margin: 10px 45px 10px 45px; 
     }
-    /*          Fin Grids INDEX desktop                */
+    /*   fin INDEX desktop    */
 
-    /*           seccion PRODUCTOS desktop             */
+    /*  seccion PRODUCTOS desktop   */
 
     .bodyProductos {
         display: grid;
@@ -551,5 +557,6 @@ footer p {
     .navCategorias ul li:hover {
         text-decoration: underline;
     }
+    /*  fin seccion PRODUCTOS desktop     */
 
 }
