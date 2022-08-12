@@ -10,6 +10,7 @@ body {
 
 /*          Header         */
 .cabecera{
+    width: 100%;
     color: #211f26;
     font-size: 25px;
     border-radius: 10px;
@@ -19,7 +20,7 @@ body {
 .logoTitulo {
     font-family: 'Lato', sans-serif;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     align-items: center;
 }
 
@@ -30,7 +31,7 @@ body {
     margin: 05px;
     border-radius: 10px;
     border-bottom: 03px solid #3a7daa;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
 .nav ul {
@@ -40,9 +41,10 @@ body {
     align-content: center;
     align-items: center;
     justify-content: center;
+    font-size: 15px;
 }
 .nav ul li {
-        padding: 08px 40px 08px 40px;
+        padding: 08px 20px 08px 20px;
         background-color: #da905f;
         margin: 01px;
         border-bottom: 04px solid #e67f66;
@@ -78,7 +80,7 @@ main {
     justify-content: center;
     align-items: center;
     font-family: 'Lato', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 30px;
 }
 
@@ -90,7 +92,7 @@ main {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    padding: 05px;
+    padding: 07px;
     margin-bottom: 30px;
     font-weight: 500;
 }
@@ -108,7 +110,7 @@ main {
     background-color: #67afcc;
     margin: 30px 10px 00px 10px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -128,40 +130,87 @@ main {
 
 
 /*              Seccion Productos             */
+
 .bodyProductos {
     display: grid;
     grid-template-areas: 
     "cabecera cabecera"
-    "nav nav"
+    "categoriasDestacadas categoriasDestacadas"
     "main main"
     "main main"
     "footer footer";
-    grid-template-rows: 100px 2fr 2fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 50% 50%;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: center;
 }
 
-.cabecera,
-.bodyProductos main,
-.categorias,
-.bodyProductos footer {
-    border: 03px solid black;
+/*     Nav bar de seccion productos    */
+.categorias {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 17px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    grid-area: categoriasDestacadas;
+    width: 85vw;
+    height: 25vh;
+    padding: 05px;
+    border-radius: 09px;
+    border: 01px solid black;
+    /* background: linear-gradient(rgba(103,175,204,1) 92%, rgba(58,125,170,1) 100%); */
+} 
+
+.categorias h4 {
+    margin-bottom: 10px;
 }
 
+.categorias ul {
+    list-style-type: none;
+    font-size: 16px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.categorias ul li {
+    margin: 03px 04px 03px 04px;
+}
+
+
+.navCategorias {
+    grid-area: navCategorias;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 17px;
+}
+
+.navCategorias ul {
+    list-style-type: none;
+}
+/*    Fin nav bar de Productos       */
 
 .bodyProductos main {
-    /* display: flex;
+    display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
-    justify-content: flex-start; */
+    justify-content: center;
     grid-area: main;
-    background-color: #a0521d;
+    width: 90vw;
+    /* background: rgb(198,206,207);
+    background: linear-gradient(180deg, rgba(198,206,207,1) 9%, rgba(255,255,255,1) 64%); */
+    background-image: url(/img/backgrounddestacados.jpg);
 }
 
 .listaProductos{
     display: flex;
     flex-flow: row wrap;
     width: 90vw;
-    margin-left: 05px;
+    justify-content: center;
+    border: 01px solid black;
+
 }
 
 .seccionTitulo{
@@ -173,8 +222,8 @@ main {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     padding: 06px;
-    margin-top: 40px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .destacados article,
@@ -182,37 +231,11 @@ main {
     margin: 10px 05px 10px 05px; 
 }
 
-/*          Nav bar de seccion productos              */
-.categorias {
-    width: 20vw;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 20px;
-    margin-left: 05px;
-    list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-    grid-area: nav;
-} 
-.categorias h4,
-.categorias ul {
-    margin-left: 20px;
-}
-.categorias h4 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.bodyProductos footer {
+    width: 100%;
 }
 
-.categorias ul {
-    list-style-type: none;
-    font-size: 16px;
-}
-
-.categorias ul li {
-    margin: 03px 00px 03px 00px;
-}
-/*          Fin nav bar de Productos              */
+/*           Fin de seccion productos          */
 
 .packs {
     background-image: url(../img/backgrounddestacados.jpg);
@@ -226,7 +249,7 @@ main {
 .packs article {
     margin: 30px;
 }
-/*           Fin de seccion productos          */
+
 
 
 
@@ -327,14 +350,15 @@ footer {
     display: flex;
     flex-flow: row wrap;
     font-family: 'Lato', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     grid-area: footer;
 }
 footer p {
     margin: 05px 0px 0px 05px;
 }
 
-/*      Grids INDEX mobile       */
+
+/*      grids INDEX mobile       */
 .bodyGrid {
     display: grid;
     grid-template-areas: 
@@ -348,13 +372,108 @@ footer p {
 /*             Fin grid INDEX mobile          */
 
 
- /*             PRODUCTOS MOBILE             */
 
 
+@media screen and (max-width: 768px) {
+    .navCategorias {
+        display: none;
+        back
+    }
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
 
-/*            Grids Index Desktop            */
+    header ul li {
+        font-size: 16px;
+    }
+
+    footer {
+        width: 100%;
+        font-size: 14px;
+    }
+    /*          seccion PRODUCTOS tableta         */
+    .bodyProductos {
+        grid-template-areas: 
+        display: grid;
+        grid-template-areas: 
+        "cabecera cabecera"
+        "categoriasDestacadas categoriasDestacadas"
+        "main main"
+        "main main"
+        "footer footer";
+        grid-template-rows: 600px auto auto auto;
+        grid-template-columns: 180px 50vw;
+        row-gap: 50px;
+        justify-items: center;
+        align-items: flex-start;
+        grid-template-columns: 30vw auto;
+        grid-template-rows: 200px 30vh auto auto auto;
+    }
+
+    .categorias {
+        margin-top: 40px;
+    }
+
+    .categorias h4 {
+        font-size: 16px;
+    }
+
+    .categorias ul {
+        font-size: 15px;
+    }
+
+    .bodyProductos main {
+        width: 67vw;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 00px;
+        padding: 08px 30px 08px 30px;
+    }
+
+    .seccionTitulo {
+        width: 30vw;
+        font-size: 18px;
+    }
+
+
+    .mainProductos section {
+        width: 66vw;
+    }
+
+
+    .navCategorias {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 05px;
+        width: 28vw;
+        display: none;
+    }
+    .navCategorias h4 {
+        margin: 05px 00px 05px 00px;
+    }
+
+    .navCategorias h4 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .navCategorias {
+        font-size: 15px;
+    }
+
+    .listaProductos {
+        width: 45vw;
+        
+    }
+
+
+/*          fin PRODUCTOS tableta            */
+}
+
 @media screen and (min-width: 1200px){
 
+    /*            grids INDEX desktop            */
     .nav {
         background-color: #67afcc;
         padding-top: 08px;
@@ -379,6 +498,64 @@ footer p {
     .destacados article {
         margin: 10px 45px 10px 45px; 
     }
-}
+    /*          Fin Grids INDEX desktop                */
 
-/*      Fin Grids Index Desktop      */
+    /*           seccion PRODUCTOS desktop             */
+
+    .bodyProductos {
+        grid-template-areas: 
+        display: grid;
+        grid-template-areas: 
+        "cabecera cabecera"
+        "categoriasDestacadas categoriasDestacadas"
+        "navCategorias main"
+        "navCategorias main"
+        "footer footer";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 180px 50vw;
+        row-gap: 10px;
+        justify-items: center;
+        align-items: flex-start;
+        grid-template-columns: 20vw auto;
+        grid-template-rows: 200px 30vh auto auto auto;
+
+    
+    }
+
+    .bodyProductos header {
+        width: 100%;
+    }
+
+    .cabecera ul li {
+        padding: 08px 100px 08px 100px;
+    }
+
+    .categorias {
+        margin-top: 80px;
+    }
+    .bodyProductos main {
+        width: 65vw;
+        margin-top: 60px;
+    }
+    
+    .listaProductos {
+        width: 60vw;
+    }
+
+    .navCategorias {
+        width: 15vw;
+        margin-left: 50px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .navCategorias h4 {
+        margin: 100px 00px 25px 00px;
+        font-size: 20px;
+    }
+
+    .navCategorias ul li:hover {
+        text-decoration: underline;
+    }
+
+}
