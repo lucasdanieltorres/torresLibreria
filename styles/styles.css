@@ -375,9 +375,9 @@ footer p {
 
 
 @media screen and (max-width: 768px) {
-    .navCategorias {
+    .navCategorias 
+    {
         display: none;
-        back
     }
     
 }
@@ -393,7 +393,6 @@ footer p {
     }
     /*          seccion PRODUCTOS tableta         */
     .bodyProductos {
-        grid-template-areas: 
         display: grid;
         grid-template-areas: 
         "cabecera cabecera"
@@ -401,13 +400,11 @@ footer p {
         "main main"
         "main main"
         "footer footer";
-        grid-template-rows: 600px auto auto auto;
-        grid-template-columns: 180px 50vw;
+        grid-template-columns: 30vw auto;
+        grid-template-rows: 200px 30vh auto auto auto;
         row-gap: 50px;
         justify-items: center;
         align-items: flex-start;
-        grid-template-columns: 30vw auto;
-        grid-template-rows: 200px 30vh auto auto auto;
     }
 
     .categorias {
@@ -503,7 +500,6 @@ footer p {
     /*           seccion PRODUCTOS desktop             */
 
     .bodyProductos {
-        grid-template-areas: 
         display: grid;
         grid-template-areas: 
         "cabecera cabecera"
@@ -511,8 +507,6 @@ footer p {
         "navCategorias main"
         "navCategorias main"
         "footer footer";
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: 180px 50vw;
         row-gap: 10px;
         justify-items: center;
         align-items: flex-start;
