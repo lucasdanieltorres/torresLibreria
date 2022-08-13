@@ -28,7 +28,7 @@ body {
     background-color: #67afcc;
     padding-top: 08px;
     padding-bottom: 08px;
-    margin: 05px;
+    /* margin: 05px; */
     border-radius: 10px;
     border-bottom: 03px solid #3a7daa;
     font-size: 16px;
@@ -240,17 +240,44 @@ main {
 
 
 /*      seccion PACKS         */
-.packs {
+
+.bodyPacks {
+    display: grid;
+    grid-template-areas: 
+    "cabecera cabecera"
+    "main main"
+    "main main"
+    "footer footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto 100px;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.bodyPacks main {
     background-image: url(../img/backgrounddestacados.jpg);
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    height: 80vh;
-    width: 60vw;
+    align-items: center;
+    grid-area: main;
+    width: 100vw;
+}
+
+.packs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
 }
 .packs article {
-    margin: 30px;
+    margin: 10px;
+}
+
+.bodyPacks footer {
+    grid-area: footer;
+    width: 100%;
 }
 /*       fin seccion PACKS         */
 
