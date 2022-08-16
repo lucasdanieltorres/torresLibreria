@@ -561,7 +561,8 @@ main {
         "main"
         "footer";
         grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 20vw 90vw 10vw;
+        row-gap: 80px;
         justify-content: center;
         align-content: center;
     }
@@ -574,6 +575,7 @@ main {
         grid-template-rows: 20vh 40vh;
         grid-area: main;
         justify-items: center;
+        align-items: center;
     }
     /* FIN CONTACTO TABLET */
 
