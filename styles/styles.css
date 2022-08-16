@@ -736,4 +736,20 @@ main {
             width: 100%;
         }
     /* FIN PACKS DESKTOP */
+
+    /* SECCION CONTACTO DESKTOP */
+        .mainContacto {
+            display: grid;
+            grid-template-areas: 
+            "textoContacto textoContacto"
+            "form contactanos"
+            "footer footer";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 40vh 40vh 10vh;
+            row-gap: 10px;
+            grid-area: main;
+            justify-items: center;
+            align-items: center;
+        }
+    /* FIN CONTACTO DESKTOP */
 }
