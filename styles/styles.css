@@ -612,6 +612,17 @@ main {
             height: 40px;
         }
 
+        /* CARDS */
+        .card {
+            border: none;
+        }
+        .card-title {
+            font-size: 14px;
+        }
+        .btn-carrito {
+            font-size: 10px;
+        }
+        /* FIN CARDS */
         .destacados{
             width: 80vw;
             padding: 10px;
@@ -624,6 +635,16 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        
+        #novedadesMiros {
+            background-color: #67afcc;
+            margin: 30px 10px 00px 10px;
+            padding: 10px;
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            width: fit-content;
         }
 
         /* ANIMACIONES INDEX */
@@ -645,12 +666,13 @@ main {
             text-decoration: underline;
         }
 
-        .destacados article img {
+        .card {
             transition: transform 0.3s;
         }
-        .destacados article img:hover {
+        .card:hover {
             transform:scale(1.1);
         }
+
         /* FIN ANIMACIONES INDEX */
     /* FIN INDEX DESKTOP */
 
