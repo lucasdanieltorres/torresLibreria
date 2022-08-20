@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +23,8 @@
     <link rel="icon" type="image/x-icon" href="../img/favicon.png"> 
 
 </head>
-<body class="bodyProductos">
-    <header class="cabecera">
+<body class="bodyProductos container-fluid">
+    <header class="cabecera row mx-auto">
 
         <section class="logoTitulo">
             <a href="../index.html"><img src="../img/miros-logo.png" alt="Logo de Libreria Miro's"></a>
@@ -42,71 +44,8 @@
             </ul>      
         </nav>      
     </header>
-    <main class="mainProductos">
-        <h2 class="seccionTitulo">PRODUCTOS</h2>
 
-        <section class="listaProductos">
-            <br>
-            <br>
-            <article>
-                <img src="../img/books/2batmanblancoynegro.png" alt="2. Batman: Blanco y negro" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/2sandman.png" alt="2. Sandman" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/66onepiece.png" alt="66. One Piece" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/7tokyorevengers.png" alt="7. Tokyo Revengers" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/boulevard-libro2.png" alt="Boulevard: Libro 2" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/cocinavegetarianasuperfacil.png" alt="Cocina vegetariana super fácil" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/coraline.png" alt="Coraline" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/diariosdeguerra.png" alt="Diarios de guerra" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/dragonballsuper.png" alt="Dragon Ball Super" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/elsusurrodelasmujeres.png" alt="El susurro de las mujeres" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/lospeores.png" alt="Los peores" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/masamadreen10min.png" alt="Masa madre en 10 minutos" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/quienestelibredeculpa.png" alt="Quien esté libre de culpa" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/hayalgomatandoninos.png" alt="Hay algo matando niños" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/saintseiyanextdimension.png" alt="Saint Seiya: Next dimension" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/estressufrimientoyfelicidad.png" alt="Estres sufrimiento y felicidad" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/nosalgasdenoche.png" alt="No salgas de noche" width="160x" height="240px"> 
-            </article>
-            <article>
-                <img src="../img/books/loscuatroacuerdos.png" alt="Los cuatro acuerdos" width="160x" height="240px"> 
-            </article>
-            <!--Faltan agregar: Mikecrack y la estrella maldita-->
-        </section>
-    </main>
-
-    <aside class="categorias">
+    <aside class="categorias row mx-auto">
         <h4>Categorías destacadas de la semana:</h4>
         <ul>
             <li>Romance - </li>
@@ -121,35 +60,220 @@
         </ul>
     </aside>
 
-    <aside class="navCategorias">
-        <h4>Categorías</h4>
-        <ul>
-            <li>Artes</li>
-            <li>Autoayuda</li>
-            <li>Biología</li>
-            <li>Ciencias</li>
-            <li>Cocina</li>
-            <li>Cómics</li>
-            <li>Computación</li>
-            <li>Deportes</li>
-            <li>Derecho</li>
-            <li>Economía</li>
-            <li>Ficción</li>
-            <li>Humanidades</li>
-            <li>Infantiles</li>
-            <li>Lenguas</li>
-            <li>Literatura Juvenil</li>
-            <li>Medicina</li>
-            <li>Salud</li>
-            <li>Tecnología e Ingeniería</li>
-            <li>Textos Escolares</li>
-            <li>Viajes y vacaciones</li>
-        </ul>
-    </aside>
+    <div class="row mx-auto">
 
-    <footer>
+        <aside class="navCategorias mt-5 bg-transparent col-3 mx-auto">
+            <h4 class="text-center">Categorías</h4>
+            <ul class="list-group">
+                <li class="list-group-item bg-transparent">Artes</li>
+                <li class="list-group-item bg-transparent">Autoayuda</li>
+                <li class="list-group-item bg-transparent">Biología</li>
+                <li class="list-group-item bg-transparent">Ciencias</li>
+                <li class="list-group-item bg-transparent">Cocina</li>
+                <li class="list-group-item bg-transparent">Cómics</li>
+                <li class="list-gro up-item bg-transparent">Computación</li>
+                <li class="list-group-item bg-transparent">Deportes</li>
+                <li class="list-group-item bg-transparent">Derecho</li>
+                <li class="list-group-item bg-transparent">Economía</li>
+                <li class="list-group-item bg-transparent">Ficción</li>
+                <li class="list-group-item bg-transparent">Humanidades</li>
+                <li class="list-group-item bg-transparent">Infantiles</li>
+                <li class="list-group-item bg-transparent">Lenguas</li>
+                <li class="list-group-item bg-transparent">Literatura juvenil</li>
+                <li class="list-group-item bg-transparent">Medicina</li>
+                <li class="list-group-item bg-transparent">Salud</li>
+                <li class="list-group-item bg-transparent">Tecnología e ingeniería</li>
+                <li class="list-group-item bg-transparent">Textos escolares</li>
+                <li class="list-group-item bg-transparent">Viajes y vacaciones</li>
+            </ul>
+        </aside>
+    
+
+
+        <main class="mainProductos col-9 mx-auto">
+            <h2 class="seccionTitulo">PRODUCTOS</h2>
+
+            <section class="listaProductos row">
+
+                <!-- INICIO COL -->
+                <section class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/2batmanblancoynegro.png" alt="Batman: blanco y negro 2">
+                        <div class="card-body">
+                            <h5 class="card-title">#2 BATMAN BLANCO Y NEGRO</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/2sandman.png" alt="Sandman numero 2">
+                        <div class="card-body">
+                            <h5 class="card-title">#2 SANDMAN</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/66onepiece.png" alt="One piece numero 66">
+                        <div class="card-body">
+                            <h5 class="card-title">#66 ONE PIECE</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/7tokyorevengers.png" alt="Tokyo revengers numero 7">
+                        <div class="card-body">
+                            <h5 class="card-title">#7 Tokyo Revengers</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/elsusurrodelasmujeres.png" alt="El susurro de las mujeres">
+                        <div class="card-body">
+                            <h5 class="card-title">EL SUSURRO DE LAS MUJERES</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                
+                </section>
+                <!-- FIN COL -->
+
+                <!-- INICIO COL -->
+                <section class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/boulevard-libro2.png" alt="Boulevard libro 2">
+                        <div class="card-body">
+                            <h5 class="card-title">BOULEVARD LIBRO 2</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/cocinavegetarianasuperfacil.png" alt="Cocina vegetariana superfacil">
+                        <div class="card-body">
+                            <h5 class="card-title">COCINA VEGETARIANA SUPERFACIL</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/coraline.png" alt="Coraline">
+                        <div class="card-body">
+                            <h5 class="card-title">CORALINE</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/diariosdeguerra.png" alt="Diarios de guerra">
+                        <div class="card-body">
+                            <h5 class="card-title">DIARIOS DE GUERRA</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/dragonballsuper.png" alt="Dragon ball super numero 17">
+                        <div class="card-body">
+                            <h5 class="card-title">#17 DRAGON BALL SUPER</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- FIN COL -->
+
+                <!-- INICIO COL -->
+                <section class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/lospeores.png" alt="Los peores">
+                        <div class="card-body">
+                            <h5 class="card-title">LOS PEORES</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/masamadreen10min.png" alt="Masa madre en 10 min">
+                        <div class="card-body">
+                            <h5 class="card-title">MASA MADRE EN 10 MINUTOS</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/quienestelibredeculpa.png" alt="Quien este libre de culpa">
+                        <div class="card-body">
+                            <h5 class="card-title">QUIEN ESTÉ LIBRE DE CULPA</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/hayalgomatandoninos.png" alt="Hay algo matando niños">
+                        <div class="card-body">
+                            <h5 class="card-title">HAY ALGO MATANDO NIÑOS</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/saintseiyanextdimension.png" alt="Saint seiya next dimension">
+                        <div class="card-body">
+                            <h5 class="card-title">SAINT SEIYA: NEXT DIMENSION</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- FIN COL -->
+            
+                <!-- INICIO COL -->
+                <section class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                    <img src="../img/books/mikecrackylaestrellamaldita.png" alt="Mikecrack y la estrella maldita">
+                        <div class="card-body">
+                            <h5 class="card-title">MIKECRACK Y LA ESTRELLA MALDITA</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/estressufrimientoyfelicidad.png" alt="Estrès sufrimiento y felicidad">
+                        <div class="card-body">
+                            <h5 class="card-title">ESTRÉS, SUFRIMIENTO Y FELICIDAD</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/nosalgasdenoche.png" alt="No salgas de noche">
+                        <div class="card-body">
+                            <h5 class="card-title">NO SALGAS DE NOCHE</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                
+                    <div class="card text-center mx-auto mt-5" style="width: 10rem;">
+                        <img src="../img/books/loscuatroacuerdos.png" alt="Los cuatro acuerdos">
+                        <div class="card-body">
+                            <h5 class="card-title">LOS CUATRO ACUERDOS</h5>
+                            <a href="#" class="btn btn-primary btn-carrito">AGREGAR AL CARRITO</a>
+                        </div>
+                    </div>
+                
+                </section>
+
+        </main>
+    </div>
+
+    <footer class="row">
     <p>Lucas Torres, 2022. Derechos reservados.</p>
-    </footer>   
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>

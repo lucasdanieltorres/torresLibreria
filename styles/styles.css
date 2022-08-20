@@ -147,7 +147,7 @@ main {
 
 /* SECCION PRODUCTOS */
 
-    .bodyProductos {
+    /* .bodyProductos {
         display: grid;
         grid-template-areas: 
         "cabecera cabecera"
@@ -160,7 +160,7 @@ main {
         row-gap: 10px;
         justify-items: center;
         align-items: center;
-    }
+    } */
 
     /* NAV BAR SECCION PRODUCTOS */
     .categorias {
@@ -224,9 +224,10 @@ main {
     .listaProductos{
         display: flex;
         flex-flow: row wrap;
-        width: 90vw;
+        /* width: 90vw; */
         justify-content: center;
         border: 01px solid black;
+        margin-bottom: 30px;
 
     }
 
@@ -466,7 +467,7 @@ main {
 
 
     /* SECCION PRODUCTOS TABLET */
-        .bodyProductos {
+        /* .bodyProductos {
             display: grid;
             grid-template-areas: 
             "cabecera cabecera"
@@ -479,7 +480,7 @@ main {
             row-gap: 50px;
             justify-items: center;
             align-items: flex-start;
-        }
+        } */
 
         .categorias {
             margin-top: 40px;
@@ -515,26 +516,22 @@ main {
 
 
         .navCategorias {
+            font-size: 15px;
             display: flex;
             flex-flow: column wrap;
             padding: 05px;
-            width: 28vw;
+            width: fit-content;
+            height: fit-content;
             display: none;
         }
         .navCategorias h4 {
             margin: 05px 00px 05px 00px;
-        }
-
-        .navCategorias h4 {
             font-size: 20px;
             margin-bottom: 25px;
         }
-        .navCategorias {
-            font-size: 15px;
-        }
 
         .listaProductos {
-            width: 45vw;
+            /* width: 45vw; */
 
         }
     /*FIN PRODUCTOS TABLET*/
@@ -677,7 +674,7 @@ main {
     /* FIN INDEX DESKTOP */
 
     /* SECCION PRODUCTOS DESKTOP */
-        .bodyProductos {
+        /* .bodyProductos {
             display: grid;
             grid-template-areas: 
             "cabecera cabecera"
@@ -692,7 +689,7 @@ main {
             grid-template-rows: 200px 30vh auto auto auto;
 
         
-        }
+        } */
 
         .bodyProductos header {
             width: 100%;
@@ -710,7 +707,7 @@ main {
         }
 
         .listaProductos {
-            width: 60vw;
+            /* width: 60vw; */
         }
 
         .listaProductos article {
@@ -732,9 +729,13 @@ main {
 
         .navCategorias {
             width: 15vw;
+            height: 55vw;
             margin-left: 50px;
             font-size: 15px;
             line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
         }
         .navCategorias h4 {
             margin: 100px 00px 25px 00px;
