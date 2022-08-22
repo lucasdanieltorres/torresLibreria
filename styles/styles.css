@@ -228,18 +228,6 @@ main {
 
 /* SECCION PACKS */
 
-    .bodyPacks {
-        display: grid;
-        grid-template-areas:
-        "cabecera cabecera"
-        "main main"
-        "footer footer";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto auto;
-        justify-items: center;
-        align-items: center;
-    }
-
     .mainPacks {
         background-image: url(../img/backgrounddestacados.jpg);
         grid-area: main;
@@ -482,20 +470,6 @@ main {
         }
 
     /*FIN PRODUCTOS TABLET*/
-
-    /* SECCION PACKS TABLET */
-        .bodyPacks {
-            display: grid;
-            grid-template-areas:
-            "cabecera cabecera"
-            "main main"
-            "footer footer";
-            grid-template-columns: 50% 50%;
-            grid-template-rows: auto 75% auto;
-            justify-items: center;
-            align-items: center;
-        }
-    /* FIN PACKS TABLET */
 
     /* SECCION CONTACTO TABLET */
     .bodyContacto {
