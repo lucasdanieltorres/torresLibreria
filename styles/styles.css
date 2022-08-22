@@ -147,21 +147,6 @@ main {
 
 /* SECCION PRODUCTOS */
 
-    /* .bodyProductos {
-        display: grid;
-        grid-template-areas: 
-        "cabecera cabecera"
-        "categoriasDestacadas categoriasDestacadas"
-        "main main"
-        "main main"
-        "footer footer";
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: 50% 50%;
-        row-gap: 10px;
-        justify-items: center;
-        align-items: center;
-    } */
-
     /* NAV BAR SECCION PRODUCTOS */
     .categorias {
         font-family: 'IBM Plex Sans', sans-serif;
@@ -172,11 +157,10 @@ main {
         align-items: center;
         grid-area: categoriasDestacadas;
         width: 85vw;
-        height: 25vh;
-        padding: 05px;
+        height: fit-content;
+        padding: 30px;
         border-radius: 09px;
         border: 01px solid black;
-        /* background: linear-gradient(rgba(103,175,204,1) 92%, rgba(58,125,170,1) 100%); */
     } 
 
     .categorias h4 {
@@ -208,29 +192,6 @@ main {
     }
     /* FIN NAV BAR PRODUCTOS */
 
-
-    .bodyProductos main {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start;
-        justify-content: center;
-        grid-area: main;
-        width: 90vw;
-        /* background: rgb(198,206,207);
-        background: linear-gradient(180deg, rgba(198,206,207,1) 9%, rgba(255,255,255,1) 64%); */
-        background-image: url(/img/backgrounddestacados.jpg);
-    }
-
-    .listaProductos{
-        display: flex;
-        flex-flow: row wrap;
-        /* width: 90vw; */
-        justify-content: center;
-        border: 01px solid black;
-        margin-bottom: 30px;
-
-    }
-
     .seccionTitulo{
         width: 100vw;
         display: flex;
@@ -244,8 +205,17 @@ main {
         margin-bottom: 30px;
     }
 
-    .destacados article,
-    .listaProductos article {
+    .bodyProductos main {
+        background-image: url(/img/backgrounddestacados.jpg);
+    }
+
+    .listaProductos{
+        border: 01px solid black;
+        margin-bottom: 30px;
+    }
+
+
+    .destacados article {
         margin: 10px 05px 10px 05px; 
     }
 
@@ -467,20 +437,6 @@ main {
 
 
     /* SECCION PRODUCTOS TABLET */
-        /* .bodyProductos {
-            display: grid;
-            grid-template-areas: 
-            "cabecera cabecera"
-            "categoriasDestacadas categoriasDestacadas"
-            "main main"
-            "main main"
-            "footer footer";
-            grid-template-columns: 30vw auto;
-            grid-template-rows: 200px 30vh auto auto auto;
-            row-gap: 50px;
-            justify-items: center;
-            align-items: flex-start;
-        } */
 
         .categorias {
             margin-top: 40px;
@@ -495,11 +451,6 @@ main {
         }
 
         .bodyProductos main {
-            width: 67vw;
-            display: flex;
-            flex-flow: column wrap;
-            align-items: center;
-            justify-content: center;
             margin-top: 00px;
             padding: 08px 30px 08px 30px;
         }
@@ -530,10 +481,6 @@ main {
             margin-bottom: 25px;
         }
 
-        .listaProductos {
-            /* width: 45vw; */
-
-        }
     /*FIN PRODUCTOS TABLET*/
 
     /* SECCION PACKS TABLET */
@@ -674,22 +621,6 @@ main {
     /* FIN INDEX DESKTOP */
 
     /* SECCION PRODUCTOS DESKTOP */
-        /* .bodyProductos {
-            display: grid;
-            grid-template-areas: 
-            "cabecera cabecera"
-            "categoriasDestacadas categoriasDestacadas"
-            "navCategorias main"
-            "navCategorias main"
-            "footer footer";
-            row-gap: 10px;
-            justify-items: center;
-            align-items: flex-start;
-            grid-template-columns: 20vw auto;
-            grid-template-rows: 200px 30vh auto auto auto;
-
-        
-        } */
 
         .bodyProductos header {
             width: 100%;
@@ -704,18 +635,6 @@ main {
         .bodyProductos main {
             width: 65vw;
             margin-top: 60px;
-        }
-
-        .listaProductos {
-            /* width: 60vw; */
-        }
-
-        .listaProductos article {
-            width: 180px;
-            height: 255px; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
         /* ANIMACIONES PRODUCTOS */
