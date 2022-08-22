@@ -254,33 +254,6 @@ main {
 
 
 /* SECCION DE CONTACTO */
-    .bodyContacto {
-        display: grid;
-        grid-template-areas: 
-        "cabecera"
-        "main"
-        "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .bodyContacto header {
-        grid-area: cabecera;
-    }
-
-    .mainContacto {
-        display: grid;
-        grid-template-areas: 
-        "textoContacto"
-        "contactanos"
-        "form";
-        grid-template-columns: 90%;
-        grid-template-rows: 1fr 300px 1fr;
-        grid-area: main;
-        justify-items: center;
-    }
 
     .textoContacto h2 {
         margin-bottom: 10px;
@@ -294,7 +267,8 @@ main {
         justify-content: center;
         align-items: baseline;
         grid-area: textoContacto;
-
+        width: 90vw;
+        margin-bottom: 40px;
     }
 
     .textoContacto p {
@@ -308,7 +282,7 @@ main {
 
     .contactanos {
         font-family: 'IBM Plex Sans', sans-serif;
-        height: 55vh;
+        height: fit-content;
         grid-area: contactanos;
         display: flex;
         flex-flow: column wrap;
@@ -328,6 +302,7 @@ main {
         align-items: center;
         padding: 15px;
         grid-area: form;
+        margin-bottom: 40px;
     }
 
     .formContacto h3 {
@@ -472,29 +447,17 @@ main {
     /*FIN PRODUCTOS TABLET*/
 
     /* SECCION CONTACTO TABLET */
-    .bodyContacto {
-        display: grid;
-        grid-template-areas: 
-        "cabecera"
-        "main"
-        "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 20vw 90vw 10vw;
-        row-gap: 80px;
-        justify-content: center;
-        align-content: center;
-    }
+
     .mainContacto {
-        display: grid;
-        grid-template-areas: 
-        "textoContacto textoContacto"
-        "form contactanos";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 20vh 40vh;
-        grid-area: main;
-        justify-items: center;
-        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
     }
+
+    .contactanos {
+        margin-left: 40px;
+    }
+
     /* FIN CONTACTO TABLET */
 
     /* SECCION ABOUT TABLET */
@@ -507,7 +470,8 @@ main {
 
 
 /* MEDIA QUERIE DESKTOP */
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px)
+{
 
     /*  INDEX desktop    */
         .nav {
@@ -656,18 +620,23 @@ main {
     /* FIN PACKS DESKTOP */
 
     /* SECCION CONTACTO DESKTOP */
-        .mainContacto {
-            display: grid;
-            grid-template-areas: 
-            "textoContacto textoContacto"
-            "form contactanos"
-            "footer footer";
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 40vh 40vh 10vh;
-            row-gap: 10px;
-            grid-area: main;
-            justify-items: center;
-            align-items: center;
-        }
+
+    .mainContacto {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: center;
+        width: 80vw;   
+    }
+
+    .formContacto {
+        margin-right: 200px;
+    }
+
+    .contactanos {
+        border-left: 01px solid black;
+        padding-left: 40px;
+    }
+    
     /* FIN CONTACTO DESKTOP */
 }
