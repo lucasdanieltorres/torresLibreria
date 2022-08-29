@@ -1,651 +1,530 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-body {  
-    background-image: url("https://raw.githubusercontent.com/lucasdanieltorres/torresLibreria/main/img/background.jpg");
+body {
+  background-image: url("https://raw.githubusercontent.com/lucasdanieltorres/torresLibreria/main/img/background.jpg");
+  /* HEADER */
+  /* FIN HEADER */
 }
-
-
-/* HEADER */
-    .cabecera{
-    width: 100%;
-    color: #211f26;
-    font-size: 25px;
-    border-radius: 10px;
-    }
-
-    .logoTitulo {
-    font-family: 'Lato', sans-serif;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    }
-
-    .cabecera nav {
-    background-color: #67afcc;
-    display: flex;
-    flex-flow: row wrap;
-    justify-items: center;
-    align-items: center;
-    padding-top: 08px;
-    padding-bottom: 08px;
-    margin: 05px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    }
-    .nav ul {
-    list-style-type: none;
-    padding: 00px;
-    margin: 00px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    }
-    .nav ul li {
-        padding: 08px 20px 08px 20px;
-        background-color: #da905f;
-        margin: 01px;
-        border-bottom: 04px solid #e67f66;
-    }
-    .nav ul li a {
-    color: #211f26;
-    text-decoration: none;
-    text-align: center;
-
-    }
-    .nav ul li a:hover{
-    color: rgb(255, 255, 255);
-    }
-/* FIN HEADER */
-
-
-main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    grid-area: main;
-    margin-top: 30px;
-    margin-bottom: 30px;
+body .cabecera {
+  width: 100%;
+  color: #211f26;
+  font-size: 25px;
+  border-radius: 10px;
 }
-
+body .cabecera .logoTitulo {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+body .cabecera nav {
+  background-color: #67afcc;
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+body .cabecera nav ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+body .cabecera nav ul li {
+  padding: 8px 20px 8px 20px;
+  background-color: #da905f;
+  margin: 1px;
+  border-bottom: 4px solid #e67f66;
+}
+body .cabecera nav ul li a {
+  color: #211f26;
+  text-decoration: none;
+  text-align: center;
+}
+body .cabecera nav ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+body main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+body footer {
+  background-color: rgba(64, 187, 84, 0.8470588235);
+  height: 10vh;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+}
+body footer p {
+  margin: 5px 0px 0px 5px;
+}
 
 /* INDEX */
+.w-85 {
+  width: 85vw;
+}
 
+#tituloDestacados {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
 
-    #tituloDestacados
-    {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    margin-bottom: 30px;
-    }
+#envioGratis {
+  background-color: #67afcc;
+  color: #000;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 7px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
 
-    #envioGratis {
-    background-color: #67afcc;
-    color: #000;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    padding: 07px;
-    margin-bottom: 30px;
-    font-weight: 500;
-    }
+#novedadesMiros {
+  background-color: #67afcc;
+  border-radius: 5px;
+  border-bottom: 3px solid #0a688d;
+  margin: 30px 10px 0px 10px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+#novedadesMiros #novedadesMail {
+  height: 25px;
+  width: 65%;
+}
+#novedadesMiros .submit {
+  margin-top: 10px;
+  width: 20%;
+  height: 28px;
+  margin-left: 0px;
+  background-color: #da905f;
+  border: none;
+  border-radius: 3px;
+  border-bottom: 2px solid #d4702d;
+}
 
-    .destacados {
-    background-image: url(/img/backgrounddestacados.jpg);
-    width: 90vw;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center; 
-    }
-
-    #novedadesMiros {
-    background-color: #67afcc;
-    border-radius: 05px;
-    border-bottom: 03px solid #0a688d;
-    margin: 30px 10px 00px 10px;
-    padding: 10px;
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-    }
-
-    #novedadesMail {
-    height: 25px;
-    width: 65%;
-    }
-    .submit {
-    margin-top: 10px;
-    width: 20%;
-    height: 28px;
-    margin-left: 00px;
-    background-color: #da905f;
-    border: none;
-    border-radius: 03px;
-    border-bottom: 02px solid #d4702d;
-    }
 /* FIN INDEX */
-
-
-
 /* SECCION PRODUCTOS */
+/* NAV BAR SECCION PRODUCTOS */
+.categorias {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 17px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 85vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 30px;
+  border-radius: 9px;
+  border: 1px solid black;
+}
+.categorias h4 {
+  margin-bottom: 10px;
+}
+.categorias ul {
+  list-style-type: none;
+  font-size: 16px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.categorias ul li {
+  margin: 3px 4px 3px 4px;
+}
 
-    /* NAV BAR SECCION PRODUCTOS */
-    .categorias {
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-size: 17px;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        width: 85vw;
-        height: fit-content;
-        padding: 30px;
-        border-radius: 09px;
-        border: 01px solid black;
-    } 
+.navCategorias {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 17px;
+  display: none;
+}
+.navCategorias ul {
+  list-style-type: none;
+}
 
-    .categorias h4 {
-        margin-bottom: 10px;
-    }
-
-    .categorias ul {
-        list-style-type: none;
-        font-size: 16px;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .categorias ul li {
-        margin: 03px 04px 03px 04px;
-    }
-
-
-    .navCategorias {
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-size: 17px;
-        display: none;
-    }
-
-    .navCategorias ul {
-        list-style-type: none;
-    }
-    /* FIN NAV BAR PRODUCTOS */
-
-    .seccionTitulo{
-        width: 100vw;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-        padding: 06px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .bodyProductos main {
-        background-image: url(/img/backgrounddestacados.jpg);
-    }
-
-    .listaProductos{
-        border: 01px solid black;
-        margin-bottom: 30px;
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-
-    .destacados article {
-        margin: 10px 05px 10px 05px; 
-    }
+/* FIN NAV BAR PRODUCTOS */
+.bodyProductos main {
+  background-image: url(/img/backgrounddestacados.jpg);
+}
+.bodyProductos main .seccionTitulo {
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  padding: 6px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.bodyProductos main .listaProductos {
+  border: 1px solid black;
+  margin-bottom: 30px;
+  display: flex;
+  flex-flow: row wrap;
+}
 
 /* FIN SECCION PRODUCTOS */
-
-
-
 /* SECCION PACKS */
-
-    .mainPacks {
-        background-image: url(../img/backgrounddestacados.jpg);
-        grid-area: main;
-        width: 80vw;
-    }
-
-    .packs {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 30px;
-
-    }
-    .packs article {
-        margin: 10px;
-    }
+.mainPacks {
+  background-image: url(../img/backgrounddestacados.jpg);
+  grid-area: main;
+  width: 80vw;
+}
+.mainPacks .packs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 
 /* FIN SECCION PACKS */
-
-
-
 /* SECCION DE CONTACTO */
+.textoContacto {
+  font-family: "IBM Plex Sans", sans-serif;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: baseline;
+  width: 90vw;
+  margin-bottom: 40px;
+}
+.textoContacto h2 {
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.textoContacto p {
+  line-height: 2;
+}
+.textoContacto p a {
+  color: #000;
+  font-weight: 600;
+}
 
-    .textoContacto h2 {
-        margin-bottom: 10px;
-        text-decoration: underline;
-    }
+.formContacto {
+  background-color: #3a7daa;
+  border: 2px solid #0c3d5f;
+  border-radius: 4px;
+  font-family: "IBM Plex Sans", sans-serif;
+  width: 300px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 40px;
+}
+.formContacto h3 {
+  margin: 15px;
+}
+.formContacto #nombre,
+.formContacto #numero,
+.formContacto #email {
+  width: 200px;
+}
+.formContacto #mensaje {
+  width: 250px;
+  height: 75px;
+}
+.formContacto .boton {
+  width: 75px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #000;
+  border-bottom: 2px solid #000;
+}
 
-    .textoContacto {
-        font-family: 'IBM Plex Sans', sans-serif;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: baseline;
-        width: 90vw;
-        margin-bottom: 40px;
-    }
-
-    .textoContacto p {
-        line-height: 2;
-    }
-
-    .textoContacto p a {
-        color: #000;
-        font-weight: 600;
-    }
-
-    .contactanos {
-        font-family: 'IBM Plex Sans', sans-serif;
-        height: fit-content;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: baseline;
-    }
-
-    .formContacto {
-        background-color: #3a7daa;
-        border: 02px solid #0c3d5f;
-        border-radius: 04px;
-        font-family: 'IBM Plex Sans', sans-serif;
-        width: 300px;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        margin-bottom: 40px;
-    }
-
-    .formContacto h3 {
-        margin: 15px;
-    }
-
-    #nombre,
-    #numero,
-    #email{
-        width: 200px;
-    }
-    #mensaje {
-        width: 250px;
-        height: 75px;
-    }
-    .boton {
-        width: 75px;
-        height: 30px;
-        border-radius: 04px;
-        border: 01px solid #000 ;
-        border-bottom: 02px solid #000;
-    } 
+.contactanos {
+  font-family: "IBM Plex Sans", sans-serif;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: baseline;
+}
 
 /* FIN DE SECCION CONTACTO */
-
 /* SECCION ABOUT */
-    .textoAbout {
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-size: 17px;
-        background-color: #da905f;
-        display: flex;
-        flex-flow: column wrap;
-        width: 80vw;
-        margin-top: 60px;
-        margin-bottom: 86px;
-        padding: 15px;
-        border-radius: 05px;
-        border-bottom: 03px solid #a0521d;
-    }
+.textoAbout {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 17px;
+  background-color: #da905f;
+  display: flex;
+  flex-flow: column wrap;
+  width: 80vw;
+  margin-top: 60px;
+  margin-bottom: 86px;
+  padding: 15px;
+  border-radius: 5px;
+  border-bottom: 3px solid #a0521d;
+}
+.textoAbout #textoaboutIngles {
+  font-style: italic;
+  font-weight: 900;
+}
 
-    #textoaboutIngles {
-        font-style: italic;
-        font-weight: 900;
-    }
 /* FIN SECCION ABOUT */
-
-/* FOOTER */
-    footer {
-        background-color: #40bb54d8;
-        height: 10vh;
-        display: flex;
-        flex-flow: row wrap;
-        font-family: 'Lato', sans-serif;
-        font-size: 15px;
-        grid-area: footer;
-    }
-    footer p {
-        margin: 05px 0px 0px 05px;
-    }
-/* FIN FOOTER */
-
-
-
-
-
-
 /* MEDIA QUERIE TABLET */
-
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-
-
-    .nav {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .nav ul li {
-        font-size: 16px;
-        padding: 08px 40px 08px 40px;
-    }
-
-    footer {
-        width: 100%;
-        font-size: 14px;
-    }
-    /* INDEX TABLET */
-    #novedadesMiros {
-        background-color: #67afcc;
-        border-radius: 05px;
-        border-bottom: 03px solid #0a688d;
-        margin: 30px 10px 00px 10px;
-        padding: 10px;
-        font-size: 16px;
-        font-family: 'Lato', sans-serif;
-        width: fit-content;
-    }
-
-    .submit {
-        border: none;
-        border-radius: 03px;
-        border-bottom: 02px solid #d4702d;
-    }
-    /* FIN INDEX TABLET */
-
-    /* SECCION PRODUCTOS TABLET */
-
-        .categorias {
-            margin-top: 40px;
-        }
-
-        .categorias h4 {
-            font-size: 16px;
-        }
-
-        .categorias ul {
-            font-size: 15px;
-        }
-
-        .bodyProductos main {
-            margin-top: 00px;
-            padding: 08px 30px 08px 30px;
-        }
-
-        .seccionTitulo {
-            width: 30vw;
-            font-size: 18px;
-        }
-
-        .mainProductos section {
-            width: 66vw;
-        }
-
-        .listaProductos {
-            display: flex;
-            flex-flow: row wrap;
-        }
-
-        .navCategorias {
-            font-size: 15px;
-            display: flex;
-            flex-flow: column wrap;
-            padding: 05px;
-            width: fit-content;
-            height: fit-content;
-            display: none;
-        }
-        .navCategorias h4 {
-            margin: 05px 00px 05px 00px;
-            font-size: 20px;
-            margin-bottom: 25px;
-        }
-
-    /*FIN PRODUCTOS TABLET*/
-
-    /* SECCION CONTACTO TABLET */
-
-    .mainContacto {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start;
-    }
-
-    .contactanos {
-        margin-left: 40px;
-    }
-
-    /* FIN CONTACTO TABLET */
-
-    /* SECCION ABOUT TABLET */
-        .bodyAbout main {
-            height: 800px;
-        }
-    /* FIN ABOUT TABLET */
+  .nav {
+    justify-content: center;
+    align-items: center;
+  }
+  .nav ul li {
+    font-size: 16px;
+    padding: 8px 40px 8px 40px;
+  }
+  footer {
+    width: 100%;
+    font-size: 14px;
+  }
+  /* INDEX TABLET */
+  #novedadesMiros {
+    background-color: #67afcc;
+    border-radius: 5px;
+    border-bottom: 3px solid #0a688d;
+    margin: 30px 10px 0px 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #novedadesMiros .submit {
+    border: none;
+    border-radius: 3px;
+    border-bottom: 2px solid #d4702d;
+  }
+  /* FIN INDEX TABLET */
+  /* SECCION PRODUCTOS TABLET */
+  .categorias {
+    margin-top: 40px;
+  }
+  .categorias h4 {
+    font-size: 16px;
+  }
+  .categorias ul {
+    font-size: 15px;
+  }
+  .bodyProductos main {
+    margin-top: 0px;
+    padding: 8px 30px 8px 30px;
+  }
+  .bodyProductos main .seccionTitulo {
+    width: 30vw;
+    font-size: 18px;
+  }
+  .bodyProductos main .listaProductos {
+    display: flex;
+    flex-flow: row wrap;
+    width: 66vw;
+  }
+  .navCategorias {
+    font-size: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: none;
+  }
+  .navCategorias h4 {
+    margin: 5px 0px 5px 0px;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  /*FIN PRODUCTOS TABLET*/
+  /* SECCION CONTACTO TABLET */
+  .mainContacto {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+  .mainContacto .contactanos {
+    margin-left: 40px;
+  }
+  /* FIN CONTACTO TABLET */
+  /* SECCION ABOUT TABLET */
+  .bodyAbout main {
+    height: 800px;
+  }
+  /* FIN ABOUT TABLET */
 }
 /* FIN MEDIA QUERIE TABLET */
-
-
 /* MEDIA QUERIE DESKTOP */
-@media screen and (min-width: 1200px)
-{
-
-    /*  INDEX desktop    */
-        .nav {
-            background-color: #67afcc;
-            padding-top: 08px;
-            padding-bottom: 08px;
-            margin: 05px;
-            border-radius: 10px;
-            border-bottom: 03px solid #3a7daa;
-            font-size: 17px;
-            font-family: 'Roboto', sans-serif;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-        }
-
-        #envioGratis {
-            margin-left: 10px;
-            margin-right: 10px;
-            height: 40px;
-        }
-
-        /* CARDS */
-        .card {
-            border: none;
-        }
-        .card-title {
-            font-size: 14px;
-        }
-        .btn-carrito {
-            font-size: 10px;
-        }
-        /* FIN CARDS */
-        .destacados{
-            width: 80vw;
-            padding: 10px;
-        }
-
-        .destacados article {
-            margin: 10px 45px 10px 45px;
-            width: 180px;
-            height: 255px; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        
-        #novedadesMiros {
-            background-color: #67afcc;
-            border-radius: 05px;
-            border-bottom: 03px solid #0a688d;
-            margin: 30px 10px 00px 10px;
-            padding: 10px;
-            font-size: 16px;
-            font-family: 'Lato', sans-serif;
-            width: fit-content;
-        }
-
-        .submit {
-            border: none;
-            border-radius: 03px;
-            border-bottom: 02px solid #d4702d;
-        }
-
-        /* ANIMACIONES INDEX */
-
-        .logoTitulo {
-            transition: 0.3s;
-        }
-
-        .logoTitulo:hover {
-            transform: rotate(05deg);
-        }
-
-        #envioGratis {
-            transition: transform 0.3s;
-        }
-
-        #envioGratis:hover {
-            transform: scale(1.1);
-            text-decoration: underline;
-        }
-
-        .card {
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform:scale(1.1);
-        }
-
-        .submit:hover {
-            background-color: #c7723a;
-        }
-        /* FIN ANIMACIONES INDEX */
-    /* FIN INDEX DESKTOP */
-
-    /* SECCION PRODUCTOS DESKTOP */
-
-        .bodyProductos header {
-            width: 100%;
-        }
-
-        .cabecera ul li {
-            padding: 08px 80px 08px 80px;
-        }
-        .categorias {
-            margin-top: 80px;
-        }
-        .bodyProductos main {
-            width: 65vw;
-            margin-top: 60px;
-        }
-
-        .listaProductos {
-            display: flex;
-            flex-flow: row wrap;
-        }
-        /* ANIMACIONES PRODUCTOS */
-        .listaProductos article img {
-            transition: transform 0.3s;
-        }
-        .listaProductos article img:hover {
-            transform:scale(1.1);
-        }
-        /* FIN ANIMACIONES PRODUCTOS */
-
-        .navCategorias {
-            width: 15vw;
-            height: 55vw;
-            margin-left: 50px;
-            font-size: 15px;
-            line-height: 1.5;
-            display: flex;
-            flex-direction: column;
-            border-radius: 10px;
-            background-color: #37eb40;
-        }
-        .navCategorias h4 {
-            margin: 100px 00px 25px 00px;
-            font-size: 20px;
-        }
-        .navCategorias ul li:hover {
-            text-decoration: underline;
-        }
-    /* FIN SECCION PRODUCTOS DESKTOP */
-
-    /* SECCION PACKS DESKTOP */
-
-        /* ANIMACIONES PACKS */
-        .packs article img{
-            transition: opacity 0.3s;
-        }
-        .packs article img:hover{
-            opacity: 0.4;
-        }
-        /* FIN ANIMACIONES PACKS */
-
-    /* FIN PACKS DESKTOP */
-
-    /* SECCION CONTACTO DESKTOP */
-
-    .mainContacto {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start;
-        justify-content: center;
-        width: 80vw;   
-    }
-
-    .formContacto {
-        margin-right: 200px;
-    }
-
-    .contactanos {
-        border-left: 01px solid black;
-        padding-left: 40px;
-    }
-    
-    /* FIN CONTACTO DESKTOP */
-}
+@media screen and (min-width: 1200px) {
+  /*  INDEX desktop    */
+  .nav {
+    background-color: #67afcc;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    border-bottom: 3px solid #3a7daa;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  #envioGratis {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 40px;
+  }
+  /* CARDS */
+  .card {
+    border: none;
+  }
+  .card-title {
+    font-size: 14px;
+  }
+  .btn-carrito {
+    font-size: 10px;
+  }
+  /* FIN CARDS */
+  #novedadesMiros {
+    background-color: #67afcc;
+    border-radius: 5px;
+    border-bottom: 3px solid #0a688d;
+    margin: 30px 10px 0px 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #novedadesMiros .submit {
+    border: none;
+    border-radius: 3px;
+    border-bottom: 2px solid #d4702d;
+  }
+  /* ANIMACIONES INDEX */
+  .logoTitulo {
+    transition: 0.3s;
+  }
+  .logoTitulo:hover {
+    transform: rotate(5deg);
+  }
+  #envioGratis {
+    transition: transform 0.3s;
+  }
+  #envioGratis:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+  }
+  .card {
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: scale(1.1);
+  }
+  .submit:hover {
+    background-color: #c7723a;
+  }
+  /* FIN ANIMACIONES INDEX */
+  /* FIN INDEX DESKTOP */
+  /* SECCION PRODUCTOS DESKTOP */
+  .bodyProductos .categorias {
+    margin-top: 80px;
+  }
+  .bodyProductos main {
+    width: 65vw;
+    margin-top: 60px;
+  }
+  .bodyProductos main .listaProductos {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  /* ANIMACIONES PRODUCTOS */
+  .listaProductos article img {
+    transition: transform 0.3s;
+  }
+  .listaProductos article img:hover {
+    transform: scale(1.1);
+  }
+  /* FIN ANIMACIONES PRODUCTOS */
+  .navCategorias {
+    width: 15vw;
+    height: 55vw;
+    margin-left: 50px;
+    font-size: 15px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #37eb40;
+  }
+  .navCategorias h4 {
+    margin: 100px 0px 25px 0px;
+    font-size: 20px;
+  }
+  .navCategorias ul li:hover {
+    text-decoration: underline;
+  }
+  /* FIN SECCION PRODUCTOS DESKTOP */
+  /* SECCION PACKS DESKTOP */
+  /* ANIMACIONES PACKS */
+  .packs article img {
+    transition: opacity 0.3s;
+  }
+  .packs article img:hover {
+    opacity: 0.4;
+  }
+  /* FIN ANIMACIONES PACKS */
+  /* FIN PACKS DESKTOP */
+  /* SECCION CONTACTO DESKTOP */
+  .mainContacto {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80vw;
+  }
+  .mainContacto .formContacto {
+    margin-right: 200px;
+  }
+  .mainContacto .contactanos {
+    border-left: 1px solid black;
+    padding-left: 40px;
+  }
+  /* FIN CONTACTO DESKTOP */
+}/*# sourceMappingURL=styles.css.map */

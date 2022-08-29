@@ -1,0 +1,625 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+// BODY GENERAL
+body {  
+    background-image: url("https://raw.githubusercontent.com/lucasdanieltorres/torresLibreria/main/img/background.jpg");
+    
+    /* HEADER */
+    .cabecera {
+        width: 100%;
+        color: #211f26;
+        font-size: 25px;
+        border-radius: 10px;
+
+        .logoTitulo {
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
+
+        nav {
+            background-color: #67afcc;
+            display: flex;
+            flex-flow: row wrap;
+            justify-items: center;
+            align-items: center;
+            padding-top: 08px;
+            padding-bottom: 08px;
+            margin: 05px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+
+            ul {
+                list-style-type: none;
+                padding: 00px;
+                margin: 00px;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: center;
+                font-size: 15px;
+            
+                li {
+                    padding: 08px 20px 08px 20px;
+                    background-color: #da905f;
+                    margin: 01px;
+                    border-bottom: 04px solid #e67f66;
+                    a {
+                        color: #211f26;
+                        text-decoration: none;
+                        text-align: center;
+
+                        &:hover{
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    /* FIN HEADER */
+    
+    // MAIN
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    // FIN MAIN
+
+    // FOOTER
+    footer {
+        background-color: #40bb54d8;
+        height: 10vh;
+        display: flex;
+        flex-flow: row wrap;
+        font-family: 'Lato', sans-serif;
+        font-size: 15px;
+
+        p {
+            margin: 05px 0px 0px 05px;
+        }
+    }
+    // FIN FOOTER
+
+}
+// FIN BODY GENERAL
+
+/* INDEX */
+.w-85 {
+    width: 85vw;
+}
+
+#tituloDestacados{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#envioGratis {
+    background-color: #67afcc;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 07px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+#novedadesMiros {
+    background-color: #67afcc;
+    border-radius: 05px;
+    border-bottom: 03px solid #0a688d;
+    margin: 30px 10px 00px 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+
+    #novedadesMail {
+        height: 25px;
+        width: 65%;
+    }
+
+    .submit {
+        margin-top: 10px;
+        width: 20%;
+        height: 28px;
+        margin-left: 00px;
+        background-color: #da905f;
+        border: none;
+        border-radius: 03px;
+        border-bottom: 02px solid #d4702d;
+    }
+}
+/* FIN INDEX */
+
+
+/* SECCION PRODUCTOS */
+
+    /* NAV BAR SECCION PRODUCTOS */
+    .categorias {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 17px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 85vw;
+        height: fit-content;
+        padding: 30px;
+        border-radius: 09px;
+        border: 01px solid black;
+
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            font-size: 16px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+        
+            li {
+                margin: 03px 04px 03px 04px;
+            }
+        }
+    } 
+
+    .navCategorias {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 17px;
+        display: none;
+
+        ul {
+            list-style-type: none;
+        }    
+    }
+    /* FIN NAV BAR PRODUCTOS */
+
+.bodyProductos main {
+    background-image: url(/img/backgrounddestacados.jpg);
+    
+    .seccionTitulo {
+        width: 100vw;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        padding: 06px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .listaProductos{
+        border: 01px solid black;
+        margin-bottom: 30px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+/* FIN SECCION PRODUCTOS */
+
+
+
+/* SECCION PACKS */
+.mainPacks {
+    background-image: url(../img/backgrounddestacados.jpg);
+    grid-area: main;
+    width: 80vw;
+    
+    .packs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px;
+    
+    }
+}
+/* FIN SECCION PACKS */
+
+
+
+/* SECCION DE CONTACTO */
+
+.textoContacto {
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: baseline;
+    width: 90vw;
+    margin-bottom: 40px;
+    
+    h2 {
+        margin-bottom: 10px;
+        text-decoration: underline;
+    }
+    
+    p {
+        line-height: 2;
+        
+        a {
+            color: #000;
+            font-weight: 600;
+        }
+    }
+}
+
+.formContacto {
+    background-color: #3a7daa;
+    border: 02px solid #0c3d5f;
+    border-radius: 04px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 40px;
+    
+    h3 {
+        margin: 15px;
+    }
+
+    #nombre,
+    #numero,
+    #email {
+    width: 200px;
+    }
+
+    #mensaje {
+        width: 250px;
+        height: 75px;
+    }
+    
+    .boton {
+        width: 75px;
+        height: 30px;
+        border-radius: 04px;
+        border: 01px solid #000 ;
+        border-bottom: 02px solid #000;
+    }
+}
+
+.contactanos {
+    font-family: 'IBM Plex Sans', sans-serif;
+    height: fit-content;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+/* FIN DE SECCION CONTACTO */
+
+
+/* SECCION ABOUT */
+.textoAbout {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 17px;
+    background-color: #da905f;
+    display: flex;
+    flex-flow: column wrap;
+    width: 80vw;
+    margin-top: 60px;
+    margin-bottom: 86px;
+    padding: 15px;
+    border-radius: 05px;
+    border-bottom: 03px solid #a0521d;
+
+    #textoaboutIngles {
+        font-style: italic;
+        font-weight: 900;
+    }
+}
+/* FIN SECCION ABOUT */
+
+
+
+/* MEDIA QUERIE TABLET */
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+
+    .nav {
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            li {
+                font-size: 16px;
+                padding: 08px 40px 08px 40px;
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* INDEX TABLET */
+    #novedadesMiros {
+        background-color: #67afcc;
+        border-radius: 05px;
+        border-bottom: 03px solid #0a688d;
+        margin: 30px 10px 00px 10px;
+        padding: 10px;
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        width: fit-content;
+
+        .submit {
+            border: none;
+            border-radius: 03px;
+            border-bottom: 02px solid #d4702d;
+        }
+    }
+    /* FIN INDEX TABLET */
+
+    /* SECCION PRODUCTOS TABLET */
+
+        .categorias {
+            margin-top: 40px;
+
+            h4 {
+                font-size: 16px;
+            }
+
+            ul {
+                font-size: 15px;
+            }
+        }
+
+        .bodyProductos main {
+            margin-top: 00px;
+            padding: 08px 30px 08px 30px;
+
+            .seccionTitulo {
+                width: 30vw;
+                font-size: 18px;
+            }
+
+            .listaProductos {
+                display: flex;
+                flex-flow: row wrap;
+                width: 66vw;
+            }
+        }
+
+        .navCategorias {
+            font-size: 15px;
+            display: flex;
+            flex-flow: column wrap;
+            padding: 05px;
+            width: fit-content;
+            height: fit-content;
+            display: none;
+
+            h4 {
+                margin: 05px 00px 05px 00px;
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+        }
+    /*FIN PRODUCTOS TABLET*/
+
+    /* SECCION CONTACTO TABLET */
+    .mainContacto {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+
+        .contactanos {
+            margin-left: 40px;
+        }
+    }
+    /* FIN CONTACTO TABLET */
+
+    /* SECCION ABOUT TABLET */
+    .bodyAbout main {
+        height: 800px;
+    }
+    /* FIN ABOUT TABLET */
+}
+/* FIN MEDIA QUERIE TABLET */
+
+
+/* MEDIA QUERIE DESKTOP */
+@media screen and (min-width: 1200px){
+
+    /*  INDEX desktop    */
+        .nav {
+            background-color: #67afcc;
+            padding-top: 08px;
+            padding-bottom: 08px;
+            margin: 05px;
+            border-radius: 10px;
+            border-bottom: 03px solid #3a7daa;
+            font-size: 17px;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        } 
+        // REVISAR .NAV DESKTOP
+
+        #envioGratis {
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 40px;
+        }
+
+        /* CARDS */
+        .card {
+            border: none;
+        }
+        .card-title {
+            font-size: 14px;
+        }
+        .btn-carrito {
+            font-size: 10px;
+        }
+        /* FIN CARDS */
+
+        #novedadesMiros {
+            background-color: #67afcc;
+            border-radius: 05px;
+            border-bottom: 03px solid #0a688d;
+            margin: 30px 10px 00px 10px;
+            padding: 10px;
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            width: fit-content;
+
+            .submit {
+                border: none;
+                border-radius: 03px;
+                border-bottom: 02px solid #d4702d;
+            }
+        }
+
+        /* ANIMACIONES INDEX */
+        .logoTitulo {
+            transition: 0.3s;
+            
+            &:hover {
+                transform: rotate(05deg);
+            }
+        }
+    
+        #envioGratis {
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+                text-decoration: underline;
+            }
+        }
+
+        
+
+        .card {
+            transition: transform 0.3s;
+            
+            &:hover {
+                transform:scale(1.1);
+            }
+        }
+        
+        .submit:hover {
+            background-color: #c7723a;
+        }
+        /* FIN ANIMACIONES INDEX */
+    /* FIN INDEX DESKTOP */
+
+    /* SECCION PRODUCTOS DESKTOP */
+        .bodyProductos {
+            .categorias {
+                margin-top: 80px;
+            }
+
+            main {
+                width: 65vw;
+                margin-top: 60px;
+
+                .listaProductos {
+                    display: flex;
+                    flex-flow: row wrap;
+                }
+            }
+        } 
+
+
+        /* ANIMACIONES PRODUCTOS */
+        .listaProductos article {
+            img {
+                transition: transform 0.3s;
+
+                &:hover {
+                    transform:scale(1.1);
+                }
+            }
+        } 
+        /* FIN ANIMACIONES PRODUCTOS */
+
+        .navCategorias {
+            width: 15vw;
+            height: 55vw;
+            margin-left: 50px;
+            font-size: 15px;
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            background-color: #37eb40;
+
+            h4 {
+                margin: 100px 00px 25px 00px;
+                font-size: 20px;
+            }
+
+            ul {
+                li {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    /* FIN SECCION PRODUCTOS DESKTOP */
+
+    /* SECCION PACKS DESKTOP */
+
+        /* ANIMACIONES PACKS */
+        .packs article img{
+            transition: opacity 0.3s;
+
+            &:hover{
+                opacity: 0.4;
+            }
+        }
+        /* FIN ANIMACIONES PACKS */
+
+    /* FIN PACKS DESKTOP */
+
+    /* SECCION CONTACTO DESKTOP */
+    .mainContacto {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: center;
+        width: 80vw;
+
+        .formContacto {
+            margin-right: 200px;
+        }
+
+        .contactanos {
+            border-left: 01px solid black;
+            padding-left: 40px;
+        }
+    }
+    /* FIN CONTACTO DESKTOP */
+}
+// FIN MEDIA QUERIE DESKTOP
