@@ -1,3 +1,5 @@
+@import "./partials/header", "./partials/footer", "./partials/variables", "./partials/index";
+
 * {
     margin: 0px;
     padding: 0px;
@@ -6,148 +8,8 @@
 // BODY GENERAL
 body {  
     background-image: url("https://raw.githubusercontent.com/lucasdanieltorres/torresLibreria/main/img/background.jpg");
-    
-    /* HEADER */
-    .cabecera {
-        width: 100%;
-        color: #211f26;
-        font-size: 25px;
-        border-radius: 10px;
-
-        .logoTitulo {
-            font-family: 'Lato', sans-serif;
-            display: flex;
-            flex-flow: column wrap;
-            align-items: center;
-        }
-
-        nav {
-            background-color: #67afcc;
-            display: flex;
-            flex-flow: row wrap;
-            justify-items: center;
-            align-items: center;
-            padding-top: 08px;
-            padding-bottom: 08px;
-            margin: 05px;
-            border-radius: 10px;
-            font-size: 16px;
-            font-family: 'Roboto', sans-serif;
-
-            ul {
-                list-style-type: none;
-                padding: 00px;
-                margin: 00px;
-                display: flex;
-                flex-flow: row wrap;
-                align-items: center;
-                justify-content: center;
-                font-size: 15px;
-            
-                li {
-                    padding: 08px 20px 08px 20px;
-                    background-color: #da905f;
-                    margin: 01px;
-                    border-bottom: 04px solid #e67f66;
-                    a {
-                        color: #211f26;
-                        text-decoration: none;
-                        text-align: center;
-
-                        &:hover{
-                            color: rgb(255, 255, 255);
-                        }
-                    }
-                }
-            }
-        }
-    } 
-    /* FIN HEADER */
-    
-    // MAIN
-    main {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    // FIN MAIN
-
-    // FOOTER
-    footer {
-        background-color: #40bb54d8;
-        height: 10vh;
-        display: flex;
-        flex-flow: row wrap;
-        font-family: 'Lato', sans-serif;
-        font-size: 15px;
-
-        p {
-            margin: 05px 0px 0px 05px;
-        }
-    }
-    // FIN FOOTER
-
 }
 // FIN BODY GENERAL
-
-/* INDEX */
-.w-85 {
-    width: 85vw;
-}
-
-#tituloDestacados{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-#envioGratis {
-    background-color: #67afcc;
-    color: #000;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    padding: 07px;
-    margin-bottom: 30px;
-    font-weight: 500;
-}
-
-#novedadesMiros {
-    background-color: #67afcc;
-    border-radius: 05px;
-    border-bottom: 03px solid #0a688d;
-    margin: 30px 10px 00px 10px;
-    padding: 10px;
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
-
-    #novedadesMail {
-        height: 25px;
-        width: 65%;
-    }
-
-    .submit {
-        margin-top: 10px;
-        width: 20%;
-        height: 28px;
-        margin-left: 00px;
-        background-color: #da905f;
-        border: none;
-        border-radius: 03px;
-        border-bottom: 02px solid #d4702d;
-    }
-}
-/* FIN INDEX */
-
 
 /* SECCION PRODUCTOS */
 
@@ -314,24 +176,34 @@ body {
 
 
 /* SECCION ABOUT */
-.textoAbout {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 17px;
-    background-color: #da905f;
-    display: flex;
-    flex-flow: column wrap;
-    width: 80vw;
-    margin-top: 60px;
-    margin-bottom: 86px;
-    padding: 15px;
-    border-radius: 05px;
-    border-bottom: 03px solid #a0521d;
 
-    #textoaboutIngles {
-        font-style: italic;
-        font-weight: 900;
+.mainAbout {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .textoAbout {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 17px;
+        background-color: #da905f;
+        display: flex;
+        flex-flow: column wrap;
+        width: 80vw;
+        margin-top: 60px;
+        margin-bottom: 86px;
+        padding: 15px;
+        border-radius: 05px;
+        border-bottom: 03px solid #a0521d;
+    
+        #textoaboutIngles {
+            font-style: italic;
+            font-weight: 900;
+        }
     }
 }
+
 /* FIN SECCION ABOUT */
 
 
@@ -357,25 +229,6 @@ body {
         width: 100%;
         font-size: 14px;
     }
-
-    /* INDEX TABLET */
-    #novedadesMiros {
-        background-color: #67afcc;
-        border-radius: 05px;
-        border-bottom: 03px solid #0a688d;
-        margin: 30px 10px 00px 10px;
-        padding: 10px;
-        font-size: 16px;
-        font-family: 'Lato', sans-serif;
-        width: fit-content;
-
-        .submit {
-            border: none;
-            border-radius: 03px;
-            border-bottom: 02px solid #d4702d;
-        }
-    }
-    /* FIN INDEX TABLET */
 
     /* SECCION PRODUCTOS TABLET */
 
@@ -447,91 +300,6 @@ body {
 
 /* MEDIA QUERIE DESKTOP */
 @media screen and (min-width: 1200px){
-
-    /*  INDEX desktop    */
-        .nav {
-            background-color: #67afcc;
-            padding-top: 08px;
-            padding-bottom: 08px;
-            margin: 05px;
-            border-radius: 10px;
-            border-bottom: 03px solid #3a7daa;
-            font-size: 17px;
-            font-family: 'Roboto', sans-serif;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-        } 
-        // REVISAR .NAV DESKTOP
-
-        #envioGratis {
-            margin-left: 10px;
-            margin-right: 10px;
-            height: 40px;
-        }
-
-        /* CARDS */
-        .card {
-            border: none;
-        }
-        .card-title {
-            font-size: 14px;
-        }
-        .btn-carrito {
-            font-size: 10px;
-        }
-        /* FIN CARDS */
-
-        #novedadesMiros {
-            background-color: #67afcc;
-            border-radius: 05px;
-            border-bottom: 03px solid #0a688d;
-            margin: 30px 10px 00px 10px;
-            padding: 10px;
-            font-size: 16px;
-            font-family: 'Lato', sans-serif;
-            width: fit-content;
-
-            .submit {
-                border: none;
-                border-radius: 03px;
-                border-bottom: 02px solid #d4702d;
-            }
-        }
-
-        /* ANIMACIONES INDEX */
-        .logoTitulo {
-            transition: 0.3s;
-            
-            &:hover {
-                transform: rotate(05deg);
-            }
-        }
-    
-        #envioGratis {
-            transition: transform 0.3s;
-
-            &:hover {
-                transform: scale(1.1);
-                text-decoration: underline;
-            }
-        }
-
-        
-
-        .card {
-            transition: transform 0.3s;
-            
-            &:hover {
-                transform:scale(1.1);
-            }
-        }
-        
-        .submit:hover {
-            background-color: #c7723a;
-        }
-        /* FIN ANIMACIONES INDEX */
-    /* FIN INDEX DESKTOP */
 
     /* SECCION PRODUCTOS DESKTOP */
         .bodyProductos {

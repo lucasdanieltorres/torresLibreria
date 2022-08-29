@@ -1,0 +1,50 @@
+.cabecera {
+    width: 100%;
+    color: #211f26;
+    font-size: 25px;
+    border-radius: 10px;
+    .logoTitulo {
+        font-family: 'Lato', sans-serif;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    nav {
+        background-color: #67afcc;
+        display: flex;
+        flex-flow: row wrap;
+        justify-items: center;
+        align-items: center;
+        padding-top: 08px;
+        padding-bottom: 08px;
+        margin: 05px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        ul {
+            list-style-type: none;
+            padding: 00px;
+            margin: 00px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+        
+            li {
+                padding: 08px 20px 08px 20px;
+                background-color: #da905f;
+                margin: 01px;
+                border-bottom: 04px solid #e67f66;
+                a {
+                    color: #211f26;
+                    text-decoration: none;
+                    text-align: center;
+                    &:hover{
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+    }
+} 
