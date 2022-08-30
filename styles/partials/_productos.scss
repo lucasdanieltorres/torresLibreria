@@ -1,0 +1,176 @@
+/* SECCION PRODUCTOS */
+
+    /* NAV BAR SECCION PRODUCTOS */
+    .categorias {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 17px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 85vw;
+        height: fit-content;
+        padding: 30px;
+        border-radius: 09px;
+        border: 01px solid black;
+
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            font-size: 16px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+        
+            li {
+                margin: 03px 04px 03px 04px;
+            }
+        }
+    } 
+
+    .navCategorias {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 17px;
+        display: none;
+
+        ul {
+            list-style-type: none;
+        }    
+    }
+    /* FIN NAV BAR PRODUCTOS */
+
+.bodyProductos main {
+    background-image: url(/img/backgrounddestacados.jpg);
+    
+    .seccionTitulo {
+        width: 100vw;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        padding: 06px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .listaProductos{
+        border: 01px solid black;
+        margin-bottom: 30px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+/* FIN SECCION PRODUCTOS */
+
+// PRODUCTOS TABLETA
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .categorias {
+        margin-top: 40px;
+
+        h4 {
+            font-size: 16px;
+        }
+
+        ul {
+            font-size: 15px;
+        }
+    }
+
+    .bodyProductos main {
+        margin-top: 00px;
+        padding: 08px 30px 08px 30px;
+
+        .seccionTitulo {
+            width: 30vw;
+            font-size: 18px;
+        }
+
+        .listaProductos {
+            display: flex;
+            flex-flow: row wrap;
+            width: 66vw;
+        }
+    }
+
+    .navCategorias {
+        font-size: 15px;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 05px;
+        width: fit-content;
+        height: fit-content;
+        display: none;
+
+        h4 {
+            margin: 05px 00px 05px 00px;
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+    }
+}
+// FIN PRODUCTOS TABLETA
+
+// PRODUCTOS DESKTOP
+@media screen and (min-width: 1200px) {
+    .bodyProductos {
+        .categorias {
+            margin-top: 80px;
+        }
+
+        main {
+            width: 65vw;
+            margin-top: 60px;
+
+            .listaProductos {
+                display: flex;
+                flex-flow: row wrap;
+            }
+        }
+    } 
+
+
+    /* ANIMACIONES PRODUCTOS */
+    .listaProductos article {
+        img {
+            transition: transform 0.3s;
+
+            &:hover {
+                transform:scale(1.1);
+            }
+        }
+    } 
+    /* FIN ANIMACIONES PRODUCTOS */
+
+    .navCategorias {
+        width: 15vw;
+        height: 55vw;
+        margin-left: 50px;
+        font-size: 15px;
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: #37eb40;
+
+        h4 {
+            margin: 100px 00px 25px 00px;
+            font-size: 20px;
+        }
+
+        ul {
+            li {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+// FIN PRODUCTOS DESKTOP

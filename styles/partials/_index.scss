@@ -1,3 +1,5 @@
+@import "./variables";
+
 .w-85 {
     width: 85vw;
 }
@@ -13,25 +15,25 @@
 }
 
 #envioGratis {
-    background-color: #67afcc;
-    color: #000;
+    background-color: $bgPrimary;
+    color: $colorPrimary;
     width: 100%;
     text-align: center;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: $fontSize1;
     padding: 07px;
     margin-bottom: 30px;
     font-weight: 500;
 }
 
 #novedadesMiros {
-    background-color: #67afcc;
+    background-color: $bgPrimary;
     border-radius: 05px;
-    border-bottom: 03px solid #0a688d;
+    border-bottom: 03px solid $borderPrimary;
     margin: 30px 10px 00px 10px;
     padding: 10px;
-    font-size: 16px;
+    font-size: $fontSize1;
     font-family: 'Lato', sans-serif;
 
     #novedadesMail {
@@ -44,10 +46,10 @@
         width: 20%;
         height: 28px;
         margin-left: 00px;
-        background-color: #da905f;
+        background-color: $bgSecondary;
         border: none;
         border-radius: 03px;
-        border-bottom: 02px solid #d4702d;
+        border-bottom: 02px solid $borderSecondary;
     }
 }
 
@@ -55,46 +57,20 @@
 // INDEX TABLETA
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     #novedadesMiros {
-        background-color: #67afcc;
-        border-radius: 05px;
-        border-bottom: 03px solid #0a688d;
-        margin: 30px 10px 00px 10px;
-        padding: 10px;
-        font-size: 16px;
-        font-family: 'Lato', sans-serif;
         width: fit-content;
-
-        .submit {
-            border: none;
-            border-radius: 03px;
-            border-bottom: 02px solid #d4702d;
-        }
     }
 }
 // FIN INDEX TABLETA
 
-
 // INDEX DESKTOP
 @media screen and (min-width: 1200px) {
-    .nav {
-        background-color: #67afcc;
-        padding-top: 08px;
-        padding-bottom: 08px;
-        margin: 05px;
-        border-radius: 10px;
-        border-bottom: 03px solid #3a7daa;
-        font-size: 17px;
-        font-family: 'Roboto', sans-serif;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    } 
-    // REVISAR .NAV DESKTOP
+
     #envioGratis {
         margin-left: 10px;
         margin-right: 10px;
         height: 40px;
     }
+
     /* CARDS */
     .card {
         border: none;
@@ -106,22 +82,13 @@
         font-size: 10px;
     }
     /* FIN CARDS */
+
     #novedadesMiros {
-        background-color: #67afcc;
-        border-radius: 05px;
-        border-bottom: 03px solid #0a688d;
-        margin: 30px 10px 00px 10px;
-        padding: 10px;
-        font-size: 16px;
-        font-family: 'Lato', sans-serif;
         width: fit-content;
-        .submit {
-            border: none;
-            border-radius: 03px;
-            border-bottom: 02px solid #d4702d;
-        }
     }
+
     /* ANIMACIONES INDEX */
+
     .logoTitulo {
         transition: 0.3s;
         
@@ -145,9 +112,12 @@
         }
     }
     
-    .submit:hover {
-        background-color: #c7723a;
+    #novedadesMiros {
+        .submit:hover {
+            background-color: $borderSecondary;
+        }
     }
+
     /* FIN ANIMACIONES INDEX */
 }
 // FIN INDEX DESKTOP

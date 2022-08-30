@@ -1,0 +1,29 @@
+.mainPacks {
+    background-image: url(../img/backgrounddestacados.jpg);
+    grid-area: main;
+    width: 80vw;
+    
+    .packs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px;
+    
+    }
+}
+
+// PACKS DESKTOP
+@media screen and (min-width: 1200px) {
+    
+    /* ANIMACIONES PACKS */
+    .packs article img{
+        transition: opacity 0.3s;
+
+        &:hover{
+            opacity: 0.4;
+        }
+    }
+    /* FIN ANIMACIONES PACKS */
+
+}
+// FIN PACKS DESKTOP

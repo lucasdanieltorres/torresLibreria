@@ -12,6 +12,7 @@
 }
 .cabecera nav {
   background-color: #67afcc;
+  border-bottom: 3px solid #3a7daa;
   display: flex;
   flex-flow: row wrap;
   justify-items: center;
@@ -20,7 +21,7 @@
   padding-bottom: 8px;
   margin: 5px;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Roboto", sans-serif;
 }
 .cabecera nav ul {
@@ -31,13 +32,12 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
 }
 .cabecera nav ul li {
   padding: 8px 20px 8px 20px;
   background-color: #da905f;
   margin: 1px;
-  border-bottom: 4px solid #e67f66;
+  border-bottom: 4px solid #d4702d;
 }
 .cabecera nav ul li a {
   color: #211f26;
@@ -76,12 +76,12 @@ footer p {
 
 #envioGratis {
   background-color: #67afcc;
-  color: #000;
+  color: #211f26;
   width: 100%;
   text-align: center;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   padding: 7px;
   margin-bottom: 30px;
   font-weight: 500;
@@ -90,10 +90,10 @@ footer p {
 #novedadesMiros {
   background-color: #67afcc;
   border-radius: 5px;
-  border-bottom: 3px solid #0a688d;
+  border-bottom: 3px solid #3a7daa;
   margin: 30px 10px 0px 10px;
   padding: 10px;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Lato", sans-serif;
 }
 #novedadesMiros #novedadesMail {
@@ -113,37 +113,12 @@ footer p {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   #novedadesMiros {
-    background-color: #67afcc;
-    border-radius: 5px;
-    border-bottom: 3px solid #0a688d;
-    margin: 30px 10px 0px 10px;
-    padding: 10px;
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
-  #novedadesMiros .submit {
-    border: none;
-    border-radius: 3px;
-    border-bottom: 2px solid #d4702d;
-  }
 }
 @media screen and (min-width: 1200px) {
-  .nav {
-    background-color: #67afcc;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin: 5px;
-    border-radius: 10px;
-    border-bottom: 3px solid #3a7daa;
-    font-size: 17px;
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
   #envioGratis {
     margin-left: 10px;
     margin-right: 10px;
@@ -161,21 +136,9 @@ footer p {
   }
   /* FIN CARDS */
   #novedadesMiros {
-    background-color: #67afcc;
-    border-radius: 5px;
-    border-bottom: 3px solid #0a688d;
-    margin: 30px 10px 0px 10px;
-    padding: 10px;
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-  }
-  #novedadesMiros .submit {
-    border: none;
-    border-radius: 3px;
-    border-bottom: 2px solid #d4702d;
   }
   /* ANIMACIONES INDEX */
   .logoTitulo {
@@ -197,20 +160,11 @@ footer p {
   .card:hover {
     transform: scale(1.1);
   }
-  .submit:hover {
-    background-color: #c7723a;
+  #novedadesMiros .submit:hover {
+    background-color: #d4702d;
   }
   /* FIN ANIMACIONES INDEX */
 }
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-body {
-  background-image: url("https://raw.githubusercontent.com/lucasdanieltorres/torresLibreria/main/img/background.jpg");
-}
-
 /* SECCION PRODUCTOS */
 /* NAV BAR SECCION PRODUCTOS */
 .categorias {
@@ -276,7 +230,87 @@ body {
 }
 
 /* FIN SECCION PRODUCTOS */
-/* SECCION PACKS */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .categorias {
+    margin-top: 40px;
+  }
+  .categorias h4 {
+    font-size: 16px;
+  }
+  .categorias ul {
+    font-size: 15px;
+  }
+  .bodyProductos main {
+    margin-top: 0px;
+    padding: 8px 30px 8px 30px;
+  }
+  .bodyProductos main .seccionTitulo {
+    width: 30vw;
+    font-size: 18px;
+  }
+  .bodyProductos main .listaProductos {
+    display: flex;
+    flex-flow: row wrap;
+    width: 66vw;
+  }
+  .navCategorias {
+    font-size: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: none;
+  }
+  .navCategorias h4 {
+    margin: 5px 0px 5px 0px;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bodyProductos .categorias {
+    margin-top: 80px;
+  }
+  .bodyProductos main {
+    width: 65vw;
+    margin-top: 60px;
+  }
+  .bodyProductos main .listaProductos {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  /* ANIMACIONES PRODUCTOS */
+  .listaProductos article img {
+    transition: transform 0.3s;
+  }
+  .listaProductos article img:hover {
+    transform: scale(1.1);
+  }
+  /* FIN ANIMACIONES PRODUCTOS */
+  .navCategorias {
+    width: 15vw;
+    height: 55vw;
+    margin-left: 50px;
+    font-size: 15px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #37eb40;
+  }
+  .navCategorias h4 {
+    margin: 100px 0px 25px 0px;
+    font-size: 20px;
+  }
+  .navCategorias ul li:hover {
+    text-decoration: underline;
+  }
+}
 .mainPacks {
   background-image: url(../img/backgrounddestacados.jpg);
   grid-area: main;
@@ -289,8 +323,16 @@ body {
   margin-bottom: 30px;
 }
 
-/* FIN SECCION PACKS */
-/* SECCION DE CONTACTO */
+@media screen and (min-width: 1200px) {
+  /* ANIMACIONES PACKS */
+  .packs article img {
+    transition: opacity 0.3s;
+  }
+  .packs article img:hover {
+    opacity: 0.4;
+  }
+  /* FIN ANIMACIONES PACKS */
+}
 .textoContacto {
   font-family: "IBM Plex Sans", sans-serif;
   display: flex;
@@ -313,8 +355,8 @@ body {
 }
 
 .formContacto {
-  background-color: #3a7daa;
-  border: 2px solid #0c3d5f;
+  background-color: #67afcc;
+  border-bottom: 4px solid #3a7daa;
   border-radius: 4px;
   font-family: "IBM Plex Sans", sans-serif;
   width: 300px;
@@ -356,8 +398,32 @@ body {
   align-items: baseline;
 }
 
-/* FIN DE SECCION CONTACTO */
-/* SECCION ABOUT */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .mainContacto {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+  .mainContacto .contactanos {
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mainContacto {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80vw;
+  }
+  .mainContacto .formContacto {
+    margin-right: 200px;
+  }
+  .mainContacto .contactanos {
+    border-left: 1px solid black;
+    padding-left: 40px;
+  }
+}
 .mainAbout {
   display: flex;
   flex-flow: row wrap;
@@ -377,14 +443,27 @@ body {
   margin-bottom: 86px;
   padding: 15px;
   border-radius: 5px;
-  border-bottom: 3px solid #a0521d;
+  border-bottom: 3px solid #d4702d;
 }
 .mainAbout .textoAbout #textoaboutIngles {
   font-style: italic;
   font-weight: 900;
 }
 
-/* FIN SECCION ABOUT */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .bodyAbout main {
+    height: 800px;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("https://raw.githubusercontent.com/lucasdanieltorres/torresLibreria/main/img/background.jpg");
+}
+
 /* MEDIA QUERIE TABLET */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .nav {
@@ -399,130 +478,5 @@ body {
     width: 100%;
     font-size: 14px;
   }
-  /* SECCION PRODUCTOS TABLET */
-  .categorias {
-    margin-top: 40px;
-  }
-  .categorias h4 {
-    font-size: 16px;
-  }
-  .categorias ul {
-    font-size: 15px;
-  }
-  .bodyProductos main {
-    margin-top: 0px;
-    padding: 8px 30px 8px 30px;
-  }
-  .bodyProductos main .seccionTitulo {
-    width: 30vw;
-    font-size: 18px;
-  }
-  .bodyProductos main .listaProductos {
-    display: flex;
-    flex-flow: row wrap;
-    width: 66vw;
-  }
-  .navCategorias {
-    font-size: 15px;
-    display: flex;
-    flex-flow: column wrap;
-    padding: 5px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    display: none;
-  }
-  .navCategorias h4 {
-    margin: 5px 0px 5px 0px;
-    font-size: 20px;
-    margin-bottom: 25px;
-  }
-  /*FIN PRODUCTOS TABLET*/
-  /* SECCION CONTACTO TABLET */
-  .mainContacto {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-  }
-  .mainContacto .contactanos {
-    margin-left: 40px;
-  }
-  /* FIN CONTACTO TABLET */
-  /* SECCION ABOUT TABLET */
-  .bodyAbout main {
-    height: 800px;
-  }
-  /* FIN ABOUT TABLET */
 }
-/* FIN MEDIA QUERIE TABLET */
-/* MEDIA QUERIE DESKTOP */
-@media screen and (min-width: 1200px) {
-  /* SECCION PRODUCTOS DESKTOP */
-  .bodyProductos .categorias {
-    margin-top: 80px;
-  }
-  .bodyProductos main {
-    width: 65vw;
-    margin-top: 60px;
-  }
-  .bodyProductos main .listaProductos {
-    display: flex;
-    flex-flow: row wrap;
-  }
-  /* ANIMACIONES PRODUCTOS */
-  .listaProductos article img {
-    transition: transform 0.3s;
-  }
-  .listaProductos article img:hover {
-    transform: scale(1.1);
-  }
-  /* FIN ANIMACIONES PRODUCTOS */
-  .navCategorias {
-    width: 15vw;
-    height: 55vw;
-    margin-left: 50px;
-    font-size: 15px;
-    line-height: 1.5;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    background-color: #37eb40;
-  }
-  .navCategorias h4 {
-    margin: 100px 0px 25px 0px;
-    font-size: 20px;
-  }
-  .navCategorias ul li:hover {
-    text-decoration: underline;
-  }
-  /* FIN SECCION PRODUCTOS DESKTOP */
-  /* SECCION PACKS DESKTOP */
-  /* ANIMACIONES PACKS */
-  .packs article img {
-    transition: opacity 0.3s;
-  }
-  .packs article img:hover {
-    opacity: 0.4;
-  }
-  /* FIN ANIMACIONES PACKS */
-  /* FIN PACKS DESKTOP */
-  /* SECCION CONTACTO DESKTOP */
-  .mainContacto {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: center;
-    width: 80vw;
-  }
-  .mainContacto .formContacto {
-    margin-right: 200px;
-  }
-  .mainContacto .contactanos {
-    border-left: 1px solid black;
-    padding-left: 40px;
-  }
-  /* FIN CONTACTO DESKTOP */
-}/*# sourceMappingURL=styles.css.map */
+/* FIN MEDIA QUERIE TABLET *//*# sourceMappingURL=styles.css.map */

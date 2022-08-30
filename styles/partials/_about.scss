@@ -1,0 +1,34 @@
+.mainAbout {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .textoAbout {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 17px;
+        background-color: $bgSecondary;
+        display: flex;
+        flex-flow: column wrap;
+        width: 80vw;
+        margin-top: 60px;
+        margin-bottom: 86px;
+        padding: 15px;
+        border-radius: 05px;
+        border-bottom: 03px solid $borderSecondary;
+    
+        #textoaboutIngles {
+            font-style: italic;
+            font-weight: 900;
+        }
+    }
+}
+
+// ABOUT TABLET
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .bodyAbout main {
+        height: 800px;
+    }
+}
+// FIN ABOUT TABLET

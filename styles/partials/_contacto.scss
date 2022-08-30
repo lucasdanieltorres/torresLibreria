@@ -1,0 +1,105 @@
+.textoContacto {
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: baseline;
+    width: 90vw;
+    margin-bottom: 40px;
+    
+    h2 {
+        margin-bottom: 10px;
+        text-decoration: underline;
+    }
+    
+    p {
+        line-height: 2;
+        
+        a {
+            color: #000;
+            font-weight: 600;
+        }
+    }
+}
+
+.formContacto {
+    background-color: $bgPrimary;
+    border-bottom: 04px solid $borderPrimary;
+    border-radius: 04px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 40px;
+    
+    h3 {
+        margin: 15px;
+    }
+
+    #nombre,
+    #numero,
+    #email {
+    width: 200px;
+    }
+
+    #mensaje {
+        width: 250px;
+        height: 75px;
+    }
+    
+    .boton {
+        width: 75px;
+        height: 30px;
+        border-radius: 04px;
+        border: 01px solid #000 ;
+        border-bottom: 02px solid #000;
+    }
+}
+
+.contactanos {
+    font-family: 'IBM Plex Sans', sans-serif;
+    height: fit-content;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+// CONTACTO TABLETA
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .mainContacto {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+
+        .contactanos {
+            margin-left: 40px;
+        }
+    }
+}
+// FIN CONTACTO TABLETA
+
+// CONTACTO DESKTOP
+@media screen and (min-width: 1200px) {
+    .mainContacto {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: center;
+        width: 80vw;
+
+        .formContacto {
+            margin-right: 200px;
+        }
+
+        .contactanos {
+            border-left: 01px solid black;
+            padding-left: 40px;
+        }
+    }
+}
+
+// FIN CONTACTO DESKTOP
