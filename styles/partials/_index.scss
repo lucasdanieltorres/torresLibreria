@@ -27,7 +27,34 @@
     font-weight: 500;
 }
 
+.card {
+    border: none;
+    .card-body {
+        padding: 10px 00px 10px 00px;
+        .card-title {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .btn-primary {
+            color: black;
+            font-size: 14px;
+            background-color: $bgPrimary;
+            width: 100%;
+            margin: 00px;
+            border: $borderPrimary;
+            border-radius: 00px;
+            transition: transform 0.3s;
+            &:hover {
+                opacity: 0.8;
+                text-decoration: underline;
+            }
+
+        }
+    }
+}
+
 #novedadesMiros {
+    width: fit-content;
     background-color: $bgPrimary;
     border-radius: 05px;
     border-bottom: 03px solid $borderPrimary;
@@ -74,13 +101,30 @@
     /* CARDS */
     .card {
         border: none;
+        .card-body {
+            padding: 10px 00px 10px 00px;
+            .card-title {
+                font-size: 14px;
+            }
+            .btn-primary {
+                color: black;
+                font-size: 12px;
+                background-color: $bgPrimary;
+                width: 100%;
+                margin: 00px;
+                border: $borderPrimary;
+                border-radius: 00px;
+                transition: transform 0.3s;
+                &:hover {
+                    opacity: 0.8;
+                    text-decoration: underline;
+                }
+
+            }
+        }
     }
-    .card-title {
-        font-size: 14px;
-    }
-    .btn-carrito {
-        font-size: 10px;
-    }
+
+
     /* FIN CARDS */
 
     #novedadesMiros {

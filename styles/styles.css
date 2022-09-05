@@ -48,18 +48,92 @@
   color: rgb(255, 255, 255);
 }
 
-footer {
+.footer {
   background-color: rgba(64, 187, 84, 0.8470588235);
-  height: 10vh;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .tituloFooter {
+  width: 100%;
+  font-size: 18px;
+}
+.footer .contactanos {
   display: flex;
   flex-flow: row wrap;
-  font-family: "Lato", sans-serif;
-  font-size: 15px;
 }
-footer p {
-  margin: 5px 0px 0px 5px;
+.footer .contactanos .redes {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(78, 172, 94, 0.847);
+  border-radius: 5px;
+}
+.footer .contactanos .redes .logo {
+  width: 40px;
+  height: 40px;
+}
+.footer .contactanos .encontranos {
+  background-color: rgba(78, 172, 94, 0.847);
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.footer .contactanos .encontranos .logo {
+  width: 30px;
+  height: 30px;
+}
+.footer .contactanos .encontranos .textoFooter {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #211f26;
+}
+.footer .contactanos .encontranos div,
+.footer .contactanos .encontranos a div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .contactanos .encontranos a {
+  text-decoration: none;
+}
+.footer .payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .payment img {
+  width: 20rem;
+}
+.footer .copyright {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.footer .copyright span {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+.footer .developer {
+  background-color: rgba(67, 67, 67, 0.2823529412);
+  width: 100%;
+}
+.footer .developer span {
+  font-weight: 800;
 }
 
+@media screen and (min-width: 768px) {
+  .footer .payment {
+    flex-flow: row wrap;
+  }
+  .footer .payment img {
+    width: 20rem;
+  }
+}
 .w-85 {
   width: 85vw;
 }
@@ -87,7 +161,35 @@ footer p {
   font-weight: 500;
 }
 
+.card {
+  border: none;
+}
+.card .card-body {
+  padding: 10px 0px 10px 0px;
+}
+.card .card-body .card-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+.card .card-body .btn-primary {
+  color: black;
+  font-size: 14px;
+  background-color: #67afcc;
+  width: 100%;
+  margin: 0px;
+  border: #3a7daa;
+  border-radius: 0px;
+  transition: transform 0.3s;
+}
+.card .card-body .btn-primary:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
 #novedadesMiros {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   background-color: #67afcc;
   border-radius: 5px;
   border-bottom: 3px solid #3a7daa;
@@ -128,11 +230,25 @@ footer p {
   .card {
     border: none;
   }
-  .card-title {
+  .card .card-body {
+    padding: 10px 0px 10px 0px;
+  }
+  .card .card-body .card-title {
     font-size: 14px;
   }
-  .btn-carrito {
-    font-size: 10px;
+  .card .card-body .btn-primary {
+    color: black;
+    font-size: 12px;
+    background-color: #67afcc;
+    width: 100%;
+    margin: 0px;
+    border: #3a7daa;
+    border-radius: 0px;
+    transition: transform 0.3s;
+  }
+  .card .card-body .btn-primary:hover {
+    opacity: 0.8;
+    text-decoration: underline;
   }
   /* FIN CARDS */
   #novedadesMiros {
@@ -276,23 +392,7 @@ footer p {
   .bodyProductos .categorias {
     margin-top: 80px;
   }
-  .bodyProductos main {
-    width: 65vw;
-    margin-top: 60px;
-  }
-  .bodyProductos main .listaProductos {
-    display: flex;
-    flex-flow: row wrap;
-  }
-  /* ANIMACIONES PRODUCTOS */
-  .listaProductos article img {
-    transition: transform 0.3s;
-  }
-  .listaProductos article img:hover {
-    transform: scale(1.1);
-  }
-  /* FIN ANIMACIONES PRODUCTOS */
-  .navCategorias {
+  .bodyProductos .navCategorias {
     width: 15vw;
     height: 55vw;
     margin-left: 50px;
@@ -303,12 +403,20 @@ footer p {
     border-radius: 10px;
     background-color: #37eb40;
   }
-  .navCategorias h4 {
+  .bodyProductos .navCategorias h4 {
     margin: 100px 0px 25px 0px;
     font-size: 20px;
   }
-  .navCategorias ul li:hover {
+  .bodyProductos .navCategorias ul li:hover {
     text-decoration: underline;
+  }
+  .bodyProductos main {
+    width: 65vw;
+    margin-top: 60px;
+  }
+  .bodyProductos main .listaProductos {
+    display: flex;
+    flex-flow: row wrap;
   }
 }
 .mainPacks {

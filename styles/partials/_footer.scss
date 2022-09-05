@@ -1,12 +1,95 @@
-footer {
+.footer {
     background-color: $bgFooter;
-    height: 10vh;
-    display: flex;
-    flex-flow: row wrap;
     font-family: $fontLogo;
-    font-size: $fontSize1;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    .tituloFooter {
+        width: 100%;
+        font-size: 18px;
+    }
+    .contactanos {
+        display: flex;
+        flex-flow: row wrap;
+        .redes {
+            width: fit-content;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(78, 172, 94, 0.847);
+            border-radius: 05px;
+            .logo {
+                width: 40px;
+                height: 40px;
+            }
+            
+        }
+        
+        .encontranos {
+            background-color: rgba(78, 172, 94, 0.847);
+            border-radius: 05px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            .logo {
+                width: 30px;
+                height: 30px;
+            }
+            .textoFooter {
+                font-size: 14px;
+                font-family: $fontPrimary;
+                color: $colorPrimary;
+            }
+            div,
+            a div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+        
+    .payment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 20rem;
+        }
+        
+    }
+    
+    .copyright {
+        font-family: $fontPrimary;
+        font-size: 14px;
+        span {
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+        }
+    }
 
-    p {
-        margin: 05px 0px 0px 05px;
+    .developer {
+        background-color: #43434348;
+        width: 100%;
+        span {
+            font-weight: 800;
+        }
     }
 }
+
+@media screen and (min-width:768px) {
+
+    .footer {    
+        .payment {
+            flex-flow: row wrap;
+            img {
+                width: 20rem;
+            }
+            
+        }   
+    }
+}
+    
