@@ -1,4 +1,5 @@
-@import "./variables", "./maps";
+@import "./maps", "./extend", "./mixins", "./variables";
+
 
 .w-85 {
     width: 85vw;

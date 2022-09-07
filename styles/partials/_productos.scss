@@ -1,3 +1,4 @@
+@import "./maps", "./extend", "./mixins", "./variables";
 /* SECCION PRODUCTOS */
 
     /* NAV BAR SECCION PRODUCTOS */
@@ -95,8 +96,8 @@
 
     .navCategorias {
         font-size: 15px;
-        display: flex;
-        flex-flow: column wrap;
+        @include displayFlex(column);
+        flex-wrap: wrap;
         padding: 05px;
         width: fit-content;
         height: fit-content;
@@ -124,8 +125,7 @@
             margin-left: 50px;
             font-size: 15px;
             line-height: 1.5;
-            display: flex;
-            flex-direction: column;
+            @include displayFlex(column);
             border-radius: 10px;
             background-color: #37eb40;
     
@@ -146,9 +146,6 @@
         main {
             width: 65vw;
             margin-top: 60px;
-            .listaProductos {
-                @extend .flexRow;
-            }
         }
     } 
 

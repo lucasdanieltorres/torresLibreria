@@ -1,3 +1,11 @@
+.flexRow, .mainPacks .seccionTitulo, .bodyProductos main .listaProductos, .bodyProductos main .seccionTitulo, #tituloDestacados, .footer .contactanos .encontranos div,
+.footer .contactanos .encontranos a div, .footer .contactanos .encontranos, .footer .contactanos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .cabecera {
   width: 100%;
   color: #211f26;
@@ -48,6 +56,14 @@
   color: rgb(255, 255, 255);
 }
 
+.flexRow, .mainPacks .seccionTitulo, .bodyProductos main .listaProductos, .bodyProductos main .seccionTitulo, #tituloDestacados, .footer .contactanos .encontranos div,
+.footer .contactanos .encontranos a div, .footer .contactanos .encontranos, .footer .contactanos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer {
   background-color: rgba(64, 187, 84, 0.8470588235);
   font-family: "Lato", sans-serif;
@@ -64,6 +80,7 @@
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
+  align-items: center;
   justify-content: space-around;
   background-color: rgba(78, 172, 94, 0.847);
   border-radius: 5px;
@@ -75,6 +92,7 @@
 .footer .contactanos .encontranos {
   background-color: rgba(78, 172, 94, 0.847);
   border-radius: 5px;
+  align-items: center;
   justify-content: space-between;
 }
 .footer .contactanos .encontranos .logo {
@@ -88,7 +106,6 @@
 }
 .footer .contactanos .encontranos div,
 .footer .contactanos .encontranos a div {
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -128,6 +145,14 @@
     width: 20rem;
   }
 }
+.flexRow, .mainPacks .seccionTitulo, .bodyProductos main .listaProductos, .bodyProductos main .seccionTitulo, #tituloDestacados, .footer .contactanos, .footer .contactanos .encontranos, .footer .contactanos .encontranos div,
+.footer .contactanos .encontranos a div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .w-85 {
   width: 85vw;
 }
@@ -221,6 +246,14 @@
   }
   /* FIN ANIMACIONES INDEX */
 }
+.flexRow, .mainPacks .seccionTitulo, .bodyProductos main .listaProductos, .bodyProductos main .seccionTitulo, .footer .contactanos, .footer .contactanos .encontranos, .footer .contactanos .encontranos div,
+.footer .contactanos .encontranos a div, #tituloDestacados {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 /* SECCION PRODUCTOS */
 /* NAV BAR SECCION PRODUCTOS */
 .categorias {
@@ -299,14 +332,13 @@
     font-size: 18px;
   }
   .bodyProductos main .listaProductos {
-    display: flex;
-    flex-flow: row wrap;
     width: 66vw;
   }
   .navCategorias {
     font-size: 15px;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 5px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -348,11 +380,15 @@
     width: 65vw;
     margin-top: 60px;
   }
-  .bodyProductos main .listaProductos {
-    display: flex;
-    flex-flow: row wrap;
-  }
 }
+.flexRow, .mainPacks .seccionTitulo, .footer .contactanos, .footer .contactanos .encontranos, .footer .contactanos .encontranos div,
+.footer .contactanos .encontranos a div, #tituloDestacados, .bodyProductos main .seccionTitulo, .bodyProductos main .listaProductos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .mainPacks {
   background-image: url(../img/backgrounddestacados.jpg);
   grid-area: main;
@@ -474,6 +510,14 @@
     padding-left: 40px;
   }
 }
+.flexRow, .footer .contactanos, .footer .contactanos .encontranos, .footer .contactanos .encontranos div,
+.footer .contactanos .encontranos a div, #tituloDestacados, .bodyProductos main .seccionTitulo, .bodyProductos main .listaProductos, .mainPacks .seccionTitulo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .mainAbout {
   display: flex;
   flex-flow: row wrap;
@@ -505,6 +549,14 @@
     height: 800px;
   }
 }
+.flexRow, .footer .contactanos, .footer .contactanos .encontranos, .footer .contactanos .encontranos div,
+.footer .contactanos .encontranos a div, #tituloDestacados, .bodyProductos main .seccionTitulo, .bodyProductos main .listaProductos, .mainPacks .seccionTitulo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
   border: none;
 }
@@ -555,7 +607,8 @@
     text-decoration: underline;
   }
 }
-.flexRow, .footer .contactanos, .footer .contactanos .encontranos, #tituloDestacados, .bodyProductos main .seccionTitulo, .bodyProductos main .listaProductos, .mainPacks .seccionTitulo {
+.flexRow, .footer .contactanos, .footer .contactanos .encontranos, .footer .contactanos .encontranos div,
+.footer .contactanos .encontranos a div, #tituloDestacados, .bodyProductos main .seccionTitulo, .bodyProductos main .listaProductos, .mainPacks .seccionTitulo {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;

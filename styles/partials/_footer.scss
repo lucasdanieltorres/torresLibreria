@@ -1,9 +1,10 @@
+@import "./maps", "./extend", "./mixins";
+
 .footer {
     background-color: $bgFooter;
     font-family: $fontLogo;
     font-size: 14px;
-    display: flex;
-    flex-direction: column;
+    @include displayFlex(column);
     .tituloFooter {
         width: 100%;
         font-size: 18px;
@@ -13,7 +14,7 @@
         .redes {
             width: fit-content;
             display: flex;
-            justify-content: space-around;
+            @include alignment(center, space-around);
             background-color: rgba(78, 172, 94, 0.847);
             border-radius: 05px;
             .logo {
@@ -27,7 +28,7 @@
             background-color: rgba(78, 172, 94, 0.847);
             border-radius: 05px;
             @extend .flexRow;
-            justify-content: space-between;
+            @include alignment(center, space-between);
             .logo {
                 width: 30px;
                 height: 30px;
@@ -39,9 +40,8 @@
             }
             div,
             a div {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+                @extend .flexRow;
+                @include alignment(center, space-between);
             }
             a {
                 text-decoration: none;
@@ -50,10 +50,8 @@
     }
         
     .payment {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include displayFlex(column);
+        @include alignment(center, center);
         img {
             width: 20rem;
         }

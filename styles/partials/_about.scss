@@ -1,3 +1,6 @@
+@import "./maps", "./extend", "./mixins", "./variables";
+
+
 .mainAbout {
     display: flex;
     flex-flow: row wrap;
