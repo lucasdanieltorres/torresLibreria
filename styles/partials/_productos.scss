@@ -48,10 +48,7 @@
     
     .seccionTitulo {
         width: 100vw;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
+        @extend .flexRow;
         font-family: 'Lato', sans-serif;
         font-size: 20px;
         padding: 06px;
@@ -62,8 +59,7 @@
     .listaProductos{
         border: 01px solid black;
         margin-bottom: 30px;
-        display: flex;
-        flex-flow: row wrap;
+        @extend .flexRow;
     }
 }
 /* FIN SECCION PRODUCTOS */
@@ -93,8 +89,6 @@
         }
 
         .listaProductos {
-            display: flex;
-            flex-flow: row wrap;
             width: 66vw;
         }
     }
@@ -152,10 +146,8 @@
         main {
             width: 65vw;
             margin-top: 60px;
-
             .listaProductos {
-                display: flex;
-                flex-flow: row wrap;
+                @extend .flexRow;
             }
         }
     } 

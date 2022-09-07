@@ -59,10 +59,6 @@
   width: 100%;
   font-size: 18px;
 }
-.footer .contactanos {
-  display: flex;
-  flex-flow: row wrap;
-}
 .footer .contactanos .redes {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -79,8 +75,6 @@
 .footer .contactanos .encontranos {
   background-color: rgba(78, 172, 94, 0.847);
   border-radius: 5px;
-  display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
 }
 .footer .contactanos .encontranos .logo {
@@ -139,10 +133,6 @@
 }
 
 #tituloDestacados {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
   font-family: "Lato", sans-serif;
   font-size: 18px;
   margin-bottom: 30px;
@@ -159,31 +149,6 @@
   padding: 7px;
   margin-bottom: 30px;
   font-weight: 500;
-}
-
-.card {
-  border: none;
-}
-.card .card-body {
-  padding: 10px 0px 10px 0px;
-}
-.card .card-body .card-title {
-  font-size: 14px;
-  font-weight: 600;
-}
-.card .card-body .btn-primary {
-  color: black;
-  font-size: 14px;
-  background-color: #67afcc;
-  width: 100%;
-  margin: 0px;
-  border: #3a7daa;
-  border-radius: 0px;
-  transition: transform 0.3s;
-}
-.card .card-body .btn-primary:hover {
-  opacity: 0.8;
-  text-decoration: underline;
 }
 
 #novedadesMiros {
@@ -226,31 +191,6 @@
     margin-right: 10px;
     height: 40px;
   }
-  /* CARDS */
-  .card {
-    border: none;
-  }
-  .card .card-body {
-    padding: 10px 0px 10px 0px;
-  }
-  .card .card-body .card-title {
-    font-size: 14px;
-  }
-  .card .card-body .btn-primary {
-    color: black;
-    font-size: 12px;
-    background-color: #67afcc;
-    width: 100%;
-    margin: 0px;
-    border: #3a7daa;
-    border-radius: 0px;
-    transition: transform 0.3s;
-  }
-  .card .card-body .btn-primary:hover {
-    opacity: 0.8;
-    text-decoration: underline;
-  }
-  /* FIN CARDS */
   #novedadesMiros {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -328,10 +268,6 @@
 }
 .bodyProductos main .seccionTitulo {
   width: 100vw;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
   font-family: "Lato", sans-serif;
   font-size: 20px;
   padding: 6px;
@@ -341,8 +277,6 @@
 .bodyProductos main .listaProductos {
   border: 1px solid black;
   margin-bottom: 30px;
-  display: flex;
-  flex-flow: row wrap;
 }
 
 /* FIN SECCION PRODUCTOS */
@@ -426,10 +360,6 @@
 }
 .mainPacks .seccionTitulo {
   width: 100vw;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
   font-family: "Lato", sans-serif;
   font-size: 20px;
   padding: 6px;
@@ -575,6 +505,63 @@
     height: 800px;
   }
 }
+.card {
+  border: none;
+}
+.card .card-body {
+  padding: 10px 0px 10px 0px;
+}
+.card .card-body .card-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+.card .card-body .btn-primary {
+  color: black;
+  font-size: 14px;
+  background-color: #67afcc;
+  width: 100%;
+  margin: 0px;
+  border: #3a7daa;
+  border-radius: 0px;
+  transition: transform 0.3s;
+}
+.card .card-body .btn-primary:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    border: none;
+  }
+  .card .card-body {
+    padding: 10px 0px 10px 0px;
+  }
+  .card .card-body .card-title {
+    font-size: 14px;
+  }
+  .card .card-body .btn-primary {
+    color: black;
+    font-size: 12px;
+    background-color: #67afcc;
+    width: 100%;
+    margin: 0px;
+    border: #3a7daa;
+    border-radius: 0px;
+    transition: transform 0.3s;
+  }
+  .card .card-body .btn-primary:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+}
+.flexRow, .footer .contactanos, .footer .contactanos .encontranos, #tituloDestacados, .bodyProductos main .seccionTitulo, .bodyProductos main .listaProductos, .mainPacks .seccionTitulo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0px;
   padding: 0px;

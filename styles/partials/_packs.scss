@@ -5,10 +5,7 @@
     
     .seccionTitulo {
         width: 100vw;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
+        @extend .flexRow;
         font-family: 'Lato', sans-serif;
         font-size: 20px;
         padding: 06px;
