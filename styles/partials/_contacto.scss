@@ -1,15 +1,20 @@
+@import "./maps", "./extend", "./mixins";
+
 .textoContacto {
     font-family: 'IBM Plex Sans', sans-serif;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    align-items: baseline;
+    text-align: start;
     width: 90vw;
     margin-bottom: 40px;
-    
+    background: rgb(185,210,219);
+    background: linear-gradient(180deg, rgba(185,210,219,1) 35%, rgba(130,193,218,1) 100%);
+    padding: 15px;
+    border-radius: 05px;
+    @include shadow(00px, 01px, 02px, $borderPrimary);
     h2 {
+        text-align: center;
         margin-bottom: 10px;
-        text-decoration: underline;
     }
     
     p {
@@ -24,7 +29,7 @@
 
 .formContacto {
     background-color: $bgPrimary;
-    border-bottom: 04px solid $borderPrimary;
+    @include shadow(00px, 04px, 04px, $borderPrimary);
     border-radius: 04px;
     font-family: 'IBM Plex Sans', sans-serif;
     width: 300px;
@@ -51,22 +56,21 @@
     }
     
     .boton {
-        width: 75px;
-        height: 30px;
-        border-radius: 04px;
-        border: 01px solid #000 ;
-        border-bottom: 02px solid #000;
+        width: 49%;
+        margin-bottom: 10px;
     }
 }
 
-.contactanos {
-    font-family: 'IBM Plex Sans', sans-serif;
-    height: fit-content;
+.mapa {
+    height: 400px;
     display: flex;
-    flex-flow: column wrap;
     justify-content: center;
-    align-items: baseline;
+    iframe {
+        height:100%;
+        width:100%;
+    }
 }
+
 
 // CONTACTO TABLETA
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -74,10 +78,6 @@
         display: flex;
         flex-flow: row wrap;
         align-items: flex-start;
-
-        .contactanos {
-            margin-left: 40px;
-        }
     }
 }
 // FIN CONTACTO TABLETA
@@ -93,11 +93,6 @@
 
         .formContacto {
             margin-right: 200px;
-        }
-
-        .contactanos {
-            border-left: 01px solid black;
-            padding-left: 40px;
         }
     }
 }

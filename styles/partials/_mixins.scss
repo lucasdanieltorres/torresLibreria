@@ -7,3 +7,7 @@
     align-items: $align;
     justify-content: $justify;
 }
+
+@mixin shadow($horizontal, $vertical, $blur, $color) {
+    box-shadow: $horizontal $vertical $blur $color;
+}

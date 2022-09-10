@@ -1,5 +1,5 @@
-.flexRow, .mainPacks .seccionTitulo, .bodyProductos main .listaProductos, .bodyProductos main .seccionTitulo, #tituloDestacados, .footer .contactanos .encontranos div,
-.footer .contactanos .encontranos a div, .footer .contactanos .encontranos, .footer .contactanos {
+.flexRow, .mainPacks .seccionTitulo, .bodyProductos main .listaProductos, .bodyProductos main .seccionTitulo, #tituloDestacados, .footer .contactanosFooter .encontranos div,
+.footer .contactanosFooter .encontranos a div, .footer .contactanosFooter .encontranos, .footer .contactanosFooter {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -56,8 +56,8 @@
   color: rgb(255, 255, 255);
 }
 
-.flexRow, .mainPacks .seccionTitulo, .bodyProductos main .listaProductos, .bodyProductos main .seccionTitulo, #tituloDestacados, .footer .contactanos .encontranos div,
-.footer .contactanos .encontranos a div, .footer .contactanos .encontranos, .footer .contactanos {
+.flexRow, .mainPacks .seccionTitulo, .bodyProductos main .listaProductos, .bodyProductos main .seccionTitulo, #tituloDestacados, .footer .contactanosFooter .encontranos div,
+.footer .contactanosFooter .encontranos a div, .footer .contactanosFooter .encontranos, .footer .contactanosFooter {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -75,7 +75,7 @@
   width: 100%;
   font-size: 18px;
 }
-.footer .contactanos .redes {
+.footer .contactanosFooter .redes {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -85,31 +85,31 @@
   background-color: rgba(78, 172, 94, 0.847);
   border-radius: 5px;
 }
-.footer .contactanos .redes .logo {
+.footer .contactanosFooter .redes .logo {
   width: 40px;
   height: 40px;
 }
-.footer .contactanos .encontranos {
+.footer .contactanosFooter .encontranos {
   background-color: rgba(78, 172, 94, 0.847);
   border-radius: 5px;
   align-items: center;
   justify-content: space-between;
 }
-.footer .contactanos .encontranos .logo {
+.footer .contactanosFooter .encontranos .logo {
   width: 30px;
   height: 30px;
 }
-.footer .contactanos .encontranos .textoFooter {
+.footer .contactanosFooter .encontranos .textoFooter {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   color: #211f26;
 }
-.footer .contactanos .encontranos div,
-.footer .contactanos .encontranos a div {
+.footer .contactanosFooter .encontranos div,
+.footer .contactanosFooter .encontranos a div {
   align-items: center;
   justify-content: space-between;
 }
-.footer .contactanos .encontranos a {
+.footer .contactanosFooter .encontranos a {
   text-decoration: none;
 }
 .footer .payment {
@@ -145,8 +145,8 @@
     width: 20rem;
   }
 }
-.flexRow, .mainPacks .seccionTitulo, .bodyProductos main .listaProductos, .bodyProductos main .seccionTitulo, #tituloDestacados, .footer .contactanos, .footer .contactanos .encontranos, .footer .contactanos .encontranos div,
-.footer .contactanos .encontranos a div {
+.flexRow, .mainPacks .seccionTitulo, .bodyProductos main .listaProductos, .bodyProductos main .seccionTitulo, #tituloDestacados, .footer .contactanosFooter, .footer .contactanosFooter .encontranos, .footer .contactanosFooter .encontranos div,
+.footer .contactanosFooter .encontranos a div {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -246,8 +246,8 @@
   }
   /* FIN ANIMACIONES INDEX */
 }
-.flexRow, .mainPacks .seccionTitulo, .bodyProductos main .listaProductos, .bodyProductos main .seccionTitulo, .footer .contactanos, .footer .contactanos .encontranos, .footer .contactanos .encontranos div,
-.footer .contactanos .encontranos a div, #tituloDestacados {
+.flexRow, .mainPacks .seccionTitulo, .bodyProductos main .listaProductos, .bodyProductos main .seccionTitulo, .footer .contactanosFooter, .footer .contactanosFooter .encontranos, .footer .contactanosFooter .encontranos div,
+.footer .contactanosFooter .encontranos a div, #tituloDestacados {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -381,8 +381,8 @@
     margin-top: 60px;
   }
 }
-.flexRow, .mainPacks .seccionTitulo, .footer .contactanos, .footer .contactanos .encontranos, .footer .contactanos .encontranos div,
-.footer .contactanos .encontranos a div, #tituloDestacados, .bodyProductos main .seccionTitulo, .bodyProductos main .listaProductos {
+.flexRow, .mainPacks .seccionTitulo, .footer .contactanosFooter, .footer .contactanosFooter .encontranos, .footer .contactanosFooter .encontranos div,
+.footer .contactanosFooter .encontranos a div, #tituloDestacados, .bodyProductos main .seccionTitulo, .bodyProductos main .listaProductos {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -419,18 +419,30 @@
   }
   /* FIN ANIMACIONES PACKS */
 }
+.flexRow, .footer .contactanosFooter, .footer .contactanosFooter .encontranos, .footer .contactanosFooter .encontranos div,
+.footer .contactanosFooter .encontranos a div, #tituloDestacados, .bodyProductos main .seccionTitulo, .bodyProductos main .listaProductos, .mainPacks .seccionTitulo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .textoContacto {
   font-family: "IBM Plex Sans", sans-serif;
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
-  align-items: baseline;
+  text-align: start;
   width: 90vw;
   margin-bottom: 40px;
+  background: rgb(185, 210, 219);
+  background: linear-gradient(180deg, rgb(185, 210, 219) 35%, rgb(130, 193, 218) 100%);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px #3a7daa;
 }
 .textoContacto h2 {
+  text-align: center;
   margin-bottom: 10px;
-  text-decoration: underline;
 }
 .textoContacto p {
   line-height: 2;
@@ -442,7 +454,7 @@
 
 .formContacto {
   background-color: #67afcc;
-  border-bottom: 4px solid #3a7daa;
+  box-shadow: 0px 4px 4px #3a7daa;
   border-radius: 4px;
   font-family: "IBM Plex Sans", sans-serif;
   width: 300px;
@@ -466,22 +478,18 @@
   height: 75px;
 }
 .formContacto .boton {
-  width: 75px;
-  height: 30px;
-  border-radius: 4px;
-  border: 1px solid #000;
-  border-bottom: 2px solid #000;
+  width: 49%;
+  margin-bottom: 10px;
 }
 
-.contactanos {
-  font-family: "IBM Plex Sans", sans-serif;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+.mapa {
+  height: 400px;
   display: flex;
-  flex-flow: column wrap;
   justify-content: center;
-  align-items: baseline;
+}
+.mapa iframe {
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -489,9 +497,6 @@
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
-  }
-  .mainContacto .contactanos {
-    margin-left: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -505,13 +510,9 @@
   .mainContacto .formContacto {
     margin-right: 200px;
   }
-  .mainContacto .contactanos {
-    border-left: 1px solid black;
-    padding-left: 40px;
-  }
 }
-.flexRow, .footer .contactanos, .footer .contactanos .encontranos, .footer .contactanos .encontranos div,
-.footer .contactanos .encontranos a div, #tituloDestacados, .bodyProductos main .seccionTitulo, .bodyProductos main .listaProductos, .mainPacks .seccionTitulo {
+.flexRow, .footer .contactanosFooter, .footer .contactanosFooter .encontranos, .footer .contactanosFooter .encontranos div,
+.footer .contactanosFooter .encontranos a div, #tituloDestacados, .bodyProductos main .seccionTitulo, .bodyProductos main .listaProductos, .mainPacks .seccionTitulo {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -549,8 +550,8 @@
     height: 800px;
   }
 }
-.flexRow, .footer .contactanos, .footer .contactanos .encontranos, .footer .contactanos .encontranos div,
-.footer .contactanos .encontranos a div, #tituloDestacados, .bodyProductos main .seccionTitulo, .bodyProductos main .listaProductos, .mainPacks .seccionTitulo {
+.flexRow, .footer .contactanosFooter, .footer .contactanosFooter .encontranos, .footer .contactanosFooter .encontranos div,
+.footer .contactanosFooter .encontranos a div, #tituloDestacados, .bodyProductos main .seccionTitulo, .bodyProductos main .listaProductos, .mainPacks .seccionTitulo {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -559,6 +560,7 @@
 
 .card {
   border: none;
+  box-shadow: 0px 2px 2px;
 }
 .card .card-body {
   padding: 10px 0px 10px 0px;
@@ -607,8 +609,8 @@
     text-decoration: underline;
   }
 }
-.flexRow, .footer .contactanos, .footer .contactanos .encontranos, .footer .contactanos .encontranos div,
-.footer .contactanos .encontranos a div, #tituloDestacados, .bodyProductos main .seccionTitulo, .bodyProductos main .listaProductos, .mainPacks .seccionTitulo {
+.flexRow, .footer .contactanosFooter, .footer .contactanosFooter .encontranos, .footer .contactanosFooter .encontranos div,
+.footer .contactanosFooter .encontranos a div, #tituloDestacados, .bodyProductos main .seccionTitulo, .bodyProductos main .listaProductos, .mainPacks .seccionTitulo {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
