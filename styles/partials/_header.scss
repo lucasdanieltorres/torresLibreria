@@ -1,52 +1,31 @@
 @import "./maps", "./extend", "./mixins", "./variables";
 
-.cabecera {
-    width: 100%;
-    color: $colorPrimary;
-    font-size: 25px;
-    border-radius: 10px;
-    .logoTitulo {
-        font-family: $fontLogo;
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
+.navbar {
+    background-color: $bgPrimary;
+    border-radius: 07px;
+    font-family: $fontPrimary;
+    .navbar-toggler {
+        margin-bottom: 05px;
     }
-    nav {
-        background-color: $bgPrimary;
-        border-bottom: 03px solid $borderPrimary;
-        display: flex;
-        flex-flow: row wrap;
-        justify-items: center;
-        align-items: center;
-        padding-top: 08px;
-        padding-bottom: 08px;
-        margin: 05px;
-        border-radius: 10px;
-        font-size: $fontSize1;
-        font-family: $fontPrimary;
-        ul {
-            list-style-type: none;
-            padding: 00px;
-            margin: 00px;
-            display: flex;
-            flex-flow: row wrap;
-            align-items: center;
-            justify-content: center;
-        
-            li {
-                padding: 08px 20px 08px 20px;
-                background-color: $bgSecondary;
-                margin: 01px;
-                border-bottom: 04px solid $borderSecondary  ;
-                a {
-                    color: $colorPrimary;
-                    text-decoration: none;
-                    text-align: center;
-                    &:hover{
-                        color: rgb(255, 255, 255);
+    div {
+        div {
+            ul {
+                
+                li {
+                    background-color: $bgSecondary;
+                    margin-left:02px;
+                    border-radius: 03px;
+                    @include shadow(00px, 02px, 04px, $borderSecondary);
+                    a {
+                        color: rgb(0, 0, 0);
+                        text-align: center;
+                        &:hover {
+                            color: rgb(255, 255, 255) !important;
+                        }  
                     }
                 }
+                
             }
-        }
+       }
     }
-} 
+}

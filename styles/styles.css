@@ -6,54 +6,26 @@
   align-items: center;
 }
 
-.cabecera {
-  width: 100%;
-  color: #211f26;
-  font-size: 25px;
-  border-radius: 10px;
-}
-.cabecera .logoTitulo {
-  font-family: "Lato", sans-serif;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
-.cabecera nav {
+.navbar {
   background-color: #67afcc;
-  border-bottom: 3px solid #3a7daa;
-  display: flex;
-  flex-flow: row wrap;
-  justify-items: center;
-  align-items: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin: 5px;
-  border-radius: 10px;
-  font-size: 15px;
+  border-radius: 7px;
   font-family: "Roboto", sans-serif;
 }
-.cabecera nav ul {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
+.navbar .navbar-toggler {
+  margin-bottom: 5px;
 }
-.cabecera nav ul li {
-  padding: 8px 20px 8px 20px;
+.navbar div div ul li {
   background-color: #da905f;
-  margin: 1px;
-  border-bottom: 4px solid #d4702d;
+  margin-left: 2px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px #d4702d;
 }
-.cabecera nav ul li a {
-  color: #211f26;
-  text-decoration: none;
+.navbar div div ul li a {
+  color: rgb(0, 0, 0);
   text-align: center;
 }
-.cabecera nav ul li a:hover {
-  color: rgb(255, 255, 255);
+.navbar div div ul li a:hover {
+  color: rgb(255, 255, 255) !important;
 }
 
 .flexRow, .mainPacks .seccionTitulo, .bodyProductos main .listaProductos, .bodyProductos main .seccionTitulo, #tituloDestacados, .footer .contactanosFooter .encontranos div,
