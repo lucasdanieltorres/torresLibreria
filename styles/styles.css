@@ -247,17 +247,17 @@ header .navbar div div form button img {
     transform: rotate(5deg);
   }
   #envioGratis {
-    transition: transform 0.3s;
+    transition: ease-in-out 0.4s;
   }
   #envioGratis:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
     text-decoration: underline;
   }
   .card {
-    transition: transform 0.3s;
+    transition: ease-in-out 0.4s;
   }
   .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   #novedadesMiros .submit:hover {
     background-color: #d4702d;

@@ -84,18 +84,18 @@
         }
     }
     #envioGratis {
-        transition: transform 0.3s;
+        transition: ease-in-out 0.4s;
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.04);
             text-decoration: underline;
         }
     }
     
     .card {
-        transition: transform 0.3s;
+        transition: ease-in-out 0.4s;
         
         &:hover {
-            transform:scale(1.1);
+            transform:scale(1.05);
         }
     }
     
