@@ -6,28 +6,74 @@
   align-items: center;
 }
 
-.navbar {
+header .logoTitulo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+header .navbar {
   background-color: #67afcc;
   border-radius: 7px;
   font-family: "Roboto", sans-serif;
 }
-.navbar .navbar-toggler {
+header .navbar .navbar-toggler {
   margin-bottom: 5px;
 }
-.navbar div div ul li {
-  background-color: #da905f;
+header .navbar div div ul li {
+  background-color: #F28B50;
   margin-left: 2px;
   border-radius: 3px;
   box-shadow: 0px 2px 4px #d4702d;
 }
-.navbar div div ul li a {
+header .navbar div div ul li:active {
+  box-shadow: 0px 0px 0px #d4702d;
+  transform: translateY(2px);
+}
+header .navbar div div ul li a {
   color: rgb(0, 0, 0);
   text-align: center;
 }
-.navbar div div ul li a:hover {
+header .navbar div div ul li a:hover {
   color: rgb(255, 255, 255) !important;
 }
+header .navbar div div form input {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+header .navbar div div form button {
+  background-color: #F28B50;
+  border: none;
+  width: 30%;
+  height: 40px;
+  width: 20%;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+header .navbar div div form button:hover {
+  background-color: #F28B50;
+}
+header .navbar div div form button:hover img {
+  scale: 1.1;
+}
+header .navbar div div form button img {
+  height: 18px;
+}
 
+@media screen and (min-width: 992px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .navbar div div {
+    display: flex;
+    justify-content: center;
+  }
+  header .navbar div div form {
+    position: absolute;
+    right: 10px;
+    width: 250px;
+  }
+}
 .flexRow, .mainPacks .seccionTitulo, .bodyProductos main .listaProductos, .bodyProductos main .seccionTitulo, #tituloDestacados, .footer .contactanosFooter .encontranos div,
 .footer .contactanosFooter .encontranos a div, .footer .contactanosFooter .encontranos, .footer .contactanosFooter {
   display: flex;
@@ -37,7 +83,7 @@
 }
 
 .footer {
-  background-color: rgba(64, 187, 84, 0.8470588235);
+  background-color: #8BD989;
   font-family: "Lato", sans-serif;
   font-size: 14px;
   display: flex;
@@ -169,7 +215,7 @@
   width: 20%;
   height: 28px;
   margin-left: 0px;
-  background-color: #da905f;
+  background-color: #F28B50;
   border: none;
   border-radius: 3px;
   border-bottom: 2px solid #d4702d;
@@ -502,7 +548,7 @@
 .mainAbout .textoAbout {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 17px;
-  background-color: #da905f;
+  background-color: #F28B50;
   display: flex;
   flex-flow: column wrap;
   width: 80vw;

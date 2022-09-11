@@ -1,31 +1,86 @@
 @import "./maps", "./extend", "./mixins", "./variables";
 
-.navbar {
-    background-color: $bgPrimary;
-    border-radius: 07px;
-    font-family: $fontPrimary;
-    .navbar-toggler {
-        margin-bottom: 05px;
+header {
+    .logoTitulo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
-    div {
+    .navbar {
+        background-color: $bgPrimary;
+        border-radius: 07px;
+        font-family: $fontPrimary;
+        .navbar-toggler {
+            margin-bottom: 05px;
+        }
         div {
-            ul {
-                
-                li {
-                    background-color: $bgSecondary;
-                    margin-left:02px;
-                    border-radius: 03px;
-                    @include shadow(00px, 02px, 04px, $borderSecondary);
-                    a {
-                        color: rgb(0, 0, 0);
-                        text-align: center;
+            div {
+                ul {
+                    
+                    li {
+                        background-color: $bgSecondary;
+                        margin-left:02px;
+                        border-radius: 03px;
+                        @include shadow(00px, 02px, 04px, $borderSecondary);
+                        &:active {
+                            @include shadow(00px, 00px, 00px, $borderSecondary);
+                            transform: translateY(02px);
+                        }
+                        a {
+                            color: rgb(0, 0, 0);
+                            text-align: center;
+                            &:hover {
+                                color: rgb(255, 255, 255) !important;
+                            }  
+                        }
+                    }
+                    
+                }
+                form {
+                    input {
+                        border-bottom-right-radius: 00px;
+                        border-top-right-radius: 00px;
+                    }
+                    button {
+                        background-color: $bgSecondary;
+                        border: none;
+                        width: 30%;
+                        height: 40px;
+                        width: 20%;
+                        border-bottom-left-radius: 00px;
+                        border-top-left-radius: 00px;
                         &:hover {
-                            color: rgb(255, 255, 255) !important;
-                        }  
+                            background-color: $bgSecondary;
+                            img {
+                                scale: 1.1;
+                            }
+                        }
+                        img {
+                            height: 18px;
+                        }
                     }
                 }
-                
             }
-       }
+        }
+    }      
+}
+
+@media screen and (min-width: 992px) {
+    header { 
+        display: flex;
+        flex-direction: column;
+        .navbar {
+            div {
+                div {
+                    display: flex;
+                    justify-content: center;
+                    form {
+                        position: absolute;
+                        right: 10px;
+                        width: 250px;
+                    }
+                }
+            }
+        }
     }
 }
