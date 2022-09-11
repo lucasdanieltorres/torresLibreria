@@ -28,10 +28,11 @@
 <body class="bodyGrid container-fluid">
     <header >
 
-        <section class="logoTitulo">
-            <a href="../index.html"><img src="../img/miros-logo.png" alt="Logo de Libreria Miro's"></a>
-            <h1>Miro's Library</h1>
-            <br>
+        <section class="logoTitulo mb-3 mx-auto">
+            <a href="../index.html">
+                <img src="../img/miros-logo.png" alt="Logo de Libreria Miro's">
+                <h1>Miro's Library</h1>
+            </a>
         </section>
 
         <nav class="navbar navbar-expand-lg">
@@ -195,10 +196,12 @@
         </section>
 
 
-        <section id="novedadesMiros" class="mx-auto my-3">
+        <section id="novedadesMiros" class="mx-auto my-3 px-4">
             <label for="novedadesMail">Recibí las novedades de Miro's:</label>
-            <input type="email" id="novedadesMail" placeholder="Dejá aquí tu e-mail">
-            <input type="submit" class="submit">
+            <div class="formNovedades">
+                <input type="email" placeholder="Dejá aquí tu e-mail" id="novedadesMail">
+                <input type="submit" class="submit">
+            </div>
         </section>
 
 
@@ -210,13 +213,13 @@
         <p class="tituloFooter my-2 text-center">Contactanos:</p>
         <section class="contactanosFooter">
 
-            <div class="redes mx-2 my-auto py-3">            
+            <div class="redes mx-2 my-auto">            
                 <a href="https://www.facebook.com/" target="_blank" class="mx-4 my-auto">    <img  class="logo" src="./img/icons/facebook.png"> </a>
                 <a href="https://www.instagram.com/" target="_blank" class="mx-4 my-auto">   <img  class="logo" src="./img/icons/instagram.png"> </a>
                 <a href="https://www.twitter.com/" target="_blank" class="mx-4 my-auto">     <img  class="logo" src="./img/icons/twitter.png"> </a>
             </div>
             
-            <div class="encontranos mx-2 my-auto px-2 py-2 mt-2">
+            <div class="encontranos mx-2 my-1 px-2">
                 <div class="mx-2">
                     <img class="logo mx-1 my-2" src="./img/icons/phone-call.png">
                     <p class="textoFooter mx-1 my-auto">4652-0123</p>
@@ -250,7 +253,13 @@
         </div>
 
         <div class="developer text-center">
-            <p class="my-1">DESARROLLO INTEGRAL DEL SITIO: <span>LUCAS TORRES</span></p>
+            <a href="https://www.linkedin.com/in/lucasdanieltorres/" target="_blank" class="mx-auto">    
+            <p class="my-1">
+                Desarrollo integral del sitio:
+                <img src="/img/icons/linkedin.png" class="ms-1">
+                Lucas Torres
+            </p>
+            </a>
         </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->

@@ -2,7 +2,6 @@
 
 .mainPacks {
     background-image: url(../img/backgrounddestacados.jpg);
-    grid-area: main;
     width: 80vw;
     
     .seccionTitulo {
@@ -16,11 +15,7 @@
     }
     
     .packs {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         margin-bottom: 30px;
-    
     }
 }
 

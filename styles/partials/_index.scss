@@ -30,25 +30,39 @@
     background-color: $bgPrimary;
     border-radius: 05px;
     border-bottom: 03px solid $borderPrimary;
-    margin: 30px 10px 00px 10px;
     padding: 10px;
     font-size: $fontSize1;
     font-family: 'Lato', sans-serif;
-
-    #novedadesMail {
-        height: 25px;
-        width: 65%;
+    label {
+        margin-bottom: 05px;
     }
-
-    .submit {
-        margin-top: 10px;
-        width: 20%;
-        height: 28px;
-        margin-left: 00px;
-        background-color: $bgSecondary;
-        border: none;
-        border-radius: 03px;
-        border-bottom: 02px solid $borderSecondary;
+    .formNovedades {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        #novedadesMail {
+            height: 25px;
+            width: 70%;
+            border: none;
+            padding: auto;
+            border-radius: 05px;
+            border-bottom-right-radius: 00px;
+            border-top-right-radius: 00px;
+            margin-right: 00px;
+        }
+    
+        .submit {
+            background-color: $bgSecondary;
+            height: 25px;
+            padding-right: 05px;
+            padding-left: 05px;
+            margin-left: 00px;
+            border-radius: 05px;
+            border-bottom: 02px solid $borderSecondary;
+            border-bottom-left-radius: 00px;
+            border-top-left-radius: 00px;
+            border: none;
+        }
     }
 }
 

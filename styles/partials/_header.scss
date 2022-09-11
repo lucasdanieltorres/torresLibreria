@@ -2,9 +2,14 @@
 
 header {
     .logoTitulo {
+        width: fit-content;
         display: flex;
         flex-direction: column;
         text-align: center;
+        a {
+            color: $colorPrimary;
+            text-decoration: none;
+        }
     }
     .navbar {
         background-color: $bgPrimary;

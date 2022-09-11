@@ -15,17 +15,17 @@
             width: fit-content;
             display: flex;
             @include alignment(center, space-around);
-            background-color: rgba(78, 172, 94, 0.847);
+            background-color: $bgFooter2;
             border-radius: 05px;
             .logo {
-                width: 40px;
-                height: 40px;
+                width: 35px;
+                height: 35px;
             }
             
         }
         
         .encontranos {
-            background-color: rgba(78, 172, 94, 0.847);
+            background-color: $bgFooter2;
             border-radius: 05px;
             @extend .flexRow;
             @include alignment(center, space-between);
@@ -70,21 +70,35 @@
     .developer {
         background-color: #43434348;
         width: 100%;
-        span {
-            font-weight: 800;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        a {
+            text-decoration: none;
+            p {
+                color: $colorPrimary;
+                img {
+                    height: 18px;
+                }
+            }
         }
+
     }
 }
 
 @media screen and (min-width:768px) {
 
-    .footer {    
+    .footer {
+        .contactanosFooter {
+            div {
+                height: 46px;
+            }
+        }
         .payment {
             flex-flow: row wrap;
             img {
                 width: 20rem;
             }
-            
-        }   
+        }  
     }
 }

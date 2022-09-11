@@ -20,7 +20,6 @@
             transition: transform 0.3s;
             &:hover {
                 opacity: 0.8;
-                text-decoration: underline;
             }
 
         }
@@ -46,9 +45,7 @@
                 transition: transform 0.3s;
                 &:hover {
                     opacity: 0.8;
-                    text-decoration: underline;
                 }
-
             }
         }
     }

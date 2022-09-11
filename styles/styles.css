@@ -7,9 +7,16 @@
 }
 
 header .logoTitulo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+header .logoTitulo a {
+  color: #211f26;
+  text-decoration: none;
 }
 header .navbar {
   background-color: #67afcc;
@@ -100,15 +107,15 @@ header .navbar div div form button img {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: rgba(78, 172, 94, 0.847);
+  background-color: #76D973;
   border-radius: 5px;
 }
 .footer .contactanosFooter .redes .logo {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 .footer .contactanosFooter .encontranos {
-  background-color: rgba(78, 172, 94, 0.847);
+  background-color: #76D973;
   border-radius: 5px;
   align-items: center;
   justify-content: space-between;
@@ -150,12 +157,24 @@ header .navbar div div form button img {
 .footer .developer {
   background-color: rgba(67, 67, 67, 0.2823529412);
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-.footer .developer span {
-  font-weight: 800;
+.footer .developer a {
+  text-decoration: none;
+}
+.footer .developer a p {
+  color: #211f26;
+}
+.footer .developer a p img {
+  height: 18px;
 }
 
 @media screen and (min-width: 768px) {
+  .footer .contactanosFooter div {
+    height: 46px;
+  }
   .footer .payment {
     flex-flow: row wrap;
   }
@@ -201,24 +220,39 @@ header .navbar div div form button img {
   background-color: #67afcc;
   border-radius: 5px;
   border-bottom: 3px solid #3a7daa;
-  margin: 30px 10px 0px 10px;
   padding: 10px;
   font-size: 15px;
   font-family: "Lato", sans-serif;
 }
-#novedadesMiros #novedadesMail {
-  height: 25px;
-  width: 65%;
+#novedadesMiros label {
+  margin-bottom: 5px;
 }
-#novedadesMiros .submit {
-  margin-top: 10px;
-  width: 20%;
-  height: 28px;
-  margin-left: 0px;
-  background-color: #F28B50;
+#novedadesMiros .formNovedades {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+#novedadesMiros .formNovedades #novedadesMail {
+  height: 25px;
+  width: 70%;
   border: none;
-  border-radius: 3px;
+  padding: auto;
+  border-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-right: 0px;
+}
+#novedadesMiros .formNovedades .submit {
+  background-color: #F28B50;
+  height: 25px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-left: 0px;
+  border-radius: 5px;
   border-bottom: 2px solid #d4702d;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border: none;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -409,7 +443,6 @@ header .navbar div div form button img {
 
 .mainPacks {
   background-image: url(../img/backgrounddestacados.jpg);
-  grid-area: main;
   width: 80vw;
 }
 .mainPacks .seccionTitulo {
@@ -421,9 +454,6 @@ header .navbar div div form button img {
   margin-bottom: 30px;
 }
 .mainPacks .packs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -599,7 +629,6 @@ header .navbar div div form button img {
 }
 .card .card-body .btn-primary:hover {
   opacity: 0.8;
-  text-decoration: underline;
 }
 
 @media screen and (min-width: 1200px) {
@@ -624,7 +653,6 @@ header .navbar div div form button img {
   }
   .card .card-body .btn-primary:hover {
     opacity: 0.8;
-    text-decoration: underline;
   }
 }
 .flexRow, .footer .contactanosFooter, .footer .contactanosFooter .encontranos, .footer .contactanosFooter .encontranos div,
